@@ -1,0 +1,17 @@
+<div id="echo" data-uri="<%= request.host %>:<%= request.port %>/websocket">
+    <ul id="messages"></ul>
+    <input id="send"/>
+    <button id="fire">Send</button>
+
+    <button class="remote" id="left">
+    	<%= image_tag("left.png") %>
+    </button>
+    <button class="remote" id="right">
+			<%= image_tag("right.png") %>
+    </button>
+   
+		<p id="timetogo"> seconds </p>
+    <button id="timeout"> play </button> 
+
+    <button id="enter"> Enter </button>
+</div>

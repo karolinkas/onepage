@@ -1,0 +1,148 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet Ms"; }
+
+#ViewContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  min-height: 600px;
+  overflow: hidden; }
+  #ViewContainer .backgroundimage {
+    height: 100%;
+    width: 100%; }
+    #ViewContainer .backgroundimage #background-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 86px;
+      background-image: url(../images/background-up.png);
+      background-repeat: no-repeat;
+      background-position: center; }
+    #ViewContainer .backgroundimage #background-middle {
+      position: absolute;
+      top: 86px;
+      width: 90em;
+      height: 80%;
+      background-image: url(../images/background-middle.jpg);
+      background-repeat: no-repeat;
+      background-position: center; }
+    #ViewContainer .backgroundimage #background-bottom {
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: url(../images/background-bottom.png);
+      background-repeat: no-repeat;
+      background-position: center; }
+  #ViewContainer #logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 20%;
+    height: auto;
+    z-index: 1000;
+    cursor: pointer; }
+  #ViewContainer #logodown {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 20%;
+    height: auto;
+    z-index: 3000; }
+  #ViewContainer #LoginButton {
+    position: absolute;
+    top: 64;
+    right: 50;
+    width: 13%;
+    cursor: pointer; }
+  #ViewContainer #LoginContainer {
+    position: absolute;
+    top: 23%;
+    right: 50%;
+    margin-left: 22%;
+    width: 70%; }
+  #ViewContainer #iconcontainer {
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    z-index: 2000;
+    overflow-x: scroll;
+    overflow-y: none;
+    white-space: nowrap; }
+    #ViewContainer #iconcontainer .icon {
+      float: left;
+      display: inline-block;
+      width: 30%;
+      cursor: pointer; }
+    #ViewContainer #iconcontainer .icon:nth-child(2) {
+      width: 40%; }
+  #ViewContainer #tv {
+    position: absolute;
+    bottom: 37%;
+    left: 50%;
+    min-width: 500px;
+    margin-left: -22%;
+    width: 612px; }
+  #ViewContainer #tablestuff {
+    position: absolute;
+    bottom: 48px;
+    left: 50%;
+    margin-left: -43%;
+    max-width: 80%; }
+  #ViewContainer #ButtonContainer {
+    position: absolute;
+    left: 50%;
+    color: white;
+    z-index: 5000;
+    bottom: 6%;
+    width: 86%;
+    margin-left: -38%;
+    height: 30%; }
+    #ViewContainer #ButtonContainer .featureButton {
+      width: 33%;
+      height: 100%;
+      float: left;
+      cursor: pointer; }
+    #ViewContainer #ButtonContainer .featureButton:nth-child(2) {
+      margin-left: -5.5%; }
+    #ViewContainer #ButtonContainer .featureButton:nth-child(3) {
+      margin-left: -5.5%; }
+    #ViewContainer #ButtonContainer .featureButton .normal {
+      background-image: url(../images/feature_button_side.png);
+      display: block; }
+    #ViewContainer #ButtonContainer .featureButton:hover .normal {
+      display: none; }
+    #ViewContainer #ButtonContainer .featureButton .active {
+      background-image: url(../images/feature_button_side_active.png);
+      display: none; }
+    #ViewContainer #ButtonContainer .featureButton:hover .active {
+      display: block; }
+    #ViewContainer #ButtonContainer .featureButton:nth-child(2) .normal {
+      background-image: url(../images/feature_button_middle.png); }
+    #ViewContainer #ButtonContainer .featureButton:nth-child(2) .active {
+      background-image: url(../images/feature_button_middle_active.png); }
+    #ViewContainer #ButtonContainer .featureButton:nth-child(3) .normal {
+      background-image: url(../images/feature_button_side.png); }
+    #ViewContainer #ButtonContainer .featureButton:nth-child(3) .active {
+      background-image: url(../images/feature_button_side_active.png); }
+    #ViewContainer #ButtonContainer .featureButton:nth-child(3) div {
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH"; }
+    #ViewContainer #ButtonContainer .featureButton div {
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 100%; }
