@@ -2,35 +2,13 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "18027",
 "files": {
-	"\/assets\/images\/00.jpg": {
-		"fileType": 16384,
+	"\/assets\/images\/back-button.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 763026,
-		"inputAbbreviatedPath": "\/assets\/images\/00.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/00.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/00_home_no_login.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 920470,
-		"inputAbbreviatedPath": "\/assets\/images\/00_home_no_login.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/00_home_no_login.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/01.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 783725,
-		"inputAbbreviatedPath": "\/assets\/images\/01.jpg",
-		"outputAbbreviatedPath": "\/assets\/images\/01.jpg",
+		"initialSize": 2786,
+		"inputAbbreviatedPath": "\/assets\/images\/back-button.png",
+		"outputAbbreviatedPath": "\/assets\/images\/back-button.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -79,46 +57,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/background.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 924053,
-		"inputAbbreviatedPath": "\/assets\/images\/background.png",
-		"outputAbbreviatedPath": "\/assets\/images\/background.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/dashboard\/como_jugar.png": {
+	"\/assets\/images\/como_jugar.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 41080,
-		"inputAbbreviatedPath": "\/assets\/images\/dashboard\/como_jugar.png",
-		"outputAbbreviatedPath": "\/assets\/images\/dashboard\/como_jugar.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/dashboard\/jugar.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 77892,
-		"inputAbbreviatedPath": "\/assets\/images\/dashboard\/jugar.png",
-		"outputAbbreviatedPath": "\/assets\/images\/dashboard\/jugar.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/dashboard\/premios.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 42068,
-		"inputAbbreviatedPath": "\/assets\/images\/dashboard\/premios.png",
-		"outputAbbreviatedPath": "\/assets\/images\/dashboard\/premios.png",
+		"inputAbbreviatedPath": "\/assets\/images\/como_jugar.png",
+		"outputAbbreviatedPath": "\/assets\/images\/como_jugar.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -200,35 +145,35 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/image.png": {
+	"\/assets\/images\/jugar.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 48402,
-		"inputAbbreviatedPath": "\/assets\/images\/image.png",
-		"outputAbbreviatedPath": "\/assets\/images\/image.png",
+		"initialSize": 77892,
+		"inputAbbreviatedPath": "\/assets\/images\/jugar.png",
+		"outputAbbreviatedPath": "\/assets\/images\/jugar.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/lamp.png": {
+	"\/assets\/images\/login-frame.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 42823,
-		"inputAbbreviatedPath": "\/assets\/images\/lamp.png",
-		"outputAbbreviatedPath": "\/assets\/images\/lamp.png",
+		"initialSize": 27330,
+		"inputAbbreviatedPath": "\/assets\/images\/login-frame.png",
+		"outputAbbreviatedPath": "\/assets\/images\/login-frame.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/left.png": {
+	"\/assets\/images\/loginButton.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 801,
-		"inputAbbreviatedPath": "\/assets\/images\/left.png",
-		"outputAbbreviatedPath": "\/assets\/images\/left.png",
+		"initialSize": 5126,
+		"inputAbbreviatedPath": "\/assets\/images\/loginButton.png",
+		"outputAbbreviatedPath": "\/assets\/images\/loginButton.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -266,6 +211,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/ok-button.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1055,
+		"inputAbbreviatedPath": "\/assets\/images\/ok-button.png",
+		"outputAbbreviatedPath": "\/assets\/images\/ok-button.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/player.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -277,6 +233,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/premios.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42068,
+		"inputAbbreviatedPath": "\/assets\/images\/premios.png",
+		"outputAbbreviatedPath": "\/assets\/images\/premios.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/register-button.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1294,
+		"inputAbbreviatedPath": "\/assets\/images\/register-button.png",
+		"outputAbbreviatedPath": "\/assets\/images\/register-button.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/right.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -284,17 +262,6 @@
 		"initialSize": 807,
 		"inputAbbreviatedPath": "\/assets\/images\/right.png",
 		"outputAbbreviatedPath": "\/assets\/images\/right.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/table.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.79512e+06,
-		"inputAbbreviatedPath": "\/assets\/images\/table.png",
-		"outputAbbreviatedPath": "\/assets\/images\/table.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -317,17 +284,6 @@
 		"initialSize": 119274,
 		"inputAbbreviatedPath": "\/assets\/images\/tv.png",
 		"outputAbbreviatedPath": "\/assets\/images\/tv.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/assets\/images\/Untitled-4.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 28371,
-		"inputAbbreviatedPath": "\/assets\/images\/Untitled-4.png",
-		"outputAbbreviatedPath": "\/assets\/images\/Untitled-4.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -382,6 +338,39 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/javascripts\/FeatureSearch.js",
 		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/FeatureSearch-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/javascripts\/jquery.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/javascripts\/jquery.min.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/jquery.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/javascripts\/min\/navigation-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/javascripts\/min\/navigation-min.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/min\/navigation-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/javascripts\/navigation.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/javascripts\/navigation.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/navigation-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -516,6 +505,18 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/prices.html",
 		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"outputAbbreviatedPath": "\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},

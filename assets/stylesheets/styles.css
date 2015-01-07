@@ -5,6 +5,18 @@ body, html {
   margin: 0;
   font-family: "Trebuchet Ms"; }
 
+::-webkit-input-placeholder {
+  font-family: "Trebuchet Ms"; }
+
+::-moz-placeholder {
+  font-family: "Trebuchet Ms"; }
+
+:-ms-input-placeholder {
+  font-family: "Trebuchet Ms"; }
+
+input:-moz-placeholder {
+  font-family: "Trebuchet Ms"; }
+
 #ViewContainer {
   position: absolute;
   width: 100%;
@@ -56,18 +68,141 @@ body, html {
     max-width: 20%;
     height: auto;
     z-index: 3000; }
-  #ViewContainer #LoginButton {
+  #ViewContainer #LoginButtonContainer {
     position: absolute;
     top: 64;
     right: 50;
-    width: 13%;
     cursor: pointer; }
-  #ViewContainer #LoginContainer {
+    #ViewContainer #LoginButtonContainer #LoginButton {
+      width: 200px; }
+    #ViewContainer #LoginButtonContainer p {
+      color: white;
+      position: absolute;
+      top: 5;
+      right: 44;
+      font-size: 0.8em; }
+  #ViewContainer div#RegisterContainer {
     position: absolute;
-    top: 23%;
-    right: 50%;
-    margin-left: 22%;
-    width: 70%; }
+    top: 13%;
+    left: 50%;
+    margin-left: -24%; }
+    #ViewContainer div#RegisterContainer #LoginFrame {
+      width: 80%;
+      height: auto; }
+    #ViewContainer div#RegisterContainer p {
+      color: #7d187b;
+      position: absolute;
+      top: 85;
+      right: 53%;
+      font-size: 1em;
+      text-transform: uppercase; }
+    #ViewContainer div#RegisterContainer div#OkButton {
+      position: relative;
+      top: -28;
+      left: 123;
+      background-image: url(../images/ok-button.png);
+      background-size: 65%;
+      height: 51px;
+      width: 61px;
+      margin-left: 434px;
+      background-repeat: no-repeat; }
+    #ViewContainer div#RegisterContainer div#BackButton {
+      background-image: url(../images/back-button.png);
+      background-repeat: no-repeat;
+      background-size: 68%;
+      cursor: pointer;
+      position: relative;
+      top: -78;
+      left: 29;
+      height: 63px;
+      width: 161px; }
+    #ViewContainer div#RegisterContainer form#RegisterForm1 {
+      position: absolute;
+      top: 24%;
+      left: 32%;
+      margin-left: -22%;
+      text-align: center;
+      width: 30%; }
+      #ViewContainer div#RegisterContainer form#RegisterForm1 input {
+        width: 232px;
+        height: 30px;
+        padding: 5px; }
+      #ViewContainer div#RegisterContainer form#RegisterForm1 input:focus {
+        outline: none; }
+      #ViewContainer div#RegisterContainer form#RegisterForm1 input {
+        margin-top: 15px; }
+    #ViewContainer div#RegisterContainer form#RegisterForm2 {
+      position: absolute;
+      top: 24%;
+      left: 62%;
+      margin-left: -22%;
+      text-align: center;
+      width: 30%; }
+      #ViewContainer div#RegisterContainer form#RegisterForm2 input {
+        width: 232px;
+        height: 30px;
+        padding: 5px; }
+      #ViewContainer div#RegisterContainer form#RegisterForm2 input:focus {
+        outline: none; }
+      #ViewContainer div#RegisterContainer form#RegisterForm2 input {
+        margin-top: 15px; }
+      #ViewContainer div#RegisterContainer form#RegisterForm2 input:nth-child(3),
+      #ViewContainer div#RegisterContainer form#RegisterForm2 input:nth-child(4),
+      #ViewContainer div#RegisterContainer form#RegisterForm2 input:nth-child(5),
+      #ViewContainer div#RegisterContainer form#RegisterForm2 input:nth-child(6) {
+        width: 23%; }
+      #ViewContainer div#RegisterContainer form#RegisterForm2 input:nth-child(7),
+      #ViewContainer div#RegisterContainer form#RegisterForm2 input:nth-child(8) {
+        width: 48%; }
+  #ViewContainer div#LoginContainer {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    margin-left: -22%; }
+    #ViewContainer div#LoginContainer #LoginFrame {
+      width: 75%;
+      height: auto; }
+    #ViewContainer div#LoginContainer p {
+      color: #7d187b;
+      position: absolute;
+      top: 85;
+      right: 53%;
+      font-size: 1em;
+      text-transform: uppercase; }
+    #ViewContainer div#LoginContainer div#OkButton {
+      background-image: url(../images/ok-button.png);
+      background-size: 65%;
+      height: 51px;
+      width: 61px;
+      margin-left: 434px;
+      position: relative;
+      top: -169px;
+      background-repeat: no-repeat; }
+    #ViewContainer div#LoginContainer div#RegisterButton {
+      background-image: url(../images/register-button.png);
+      background-repeat: no-repeat;
+      background-size: 68%;
+      cursor: pointer;
+      position: relative;
+      top: -169px;
+      left: 432;
+      height: 52px;
+      width: 74px; }
+    #ViewContainer div#LoginContainer form#LoginForm {
+      position: absolute;
+      top: 42%;
+      left: 40%;
+      margin-left: -22%;
+      text-align: center;
+      width: 30%; }
+      #ViewContainer div#LoginContainer form#LoginForm input {
+        width: 267px;
+        height: 35px;
+        padding: 5px; }
+      #ViewContainer div#LoginContainer form#LoginForm input:focus {
+        outline: none; }
+      #ViewContainer div#LoginContainer form#LoginForm input:nth-child(2) {
+        margin-top: 20px; }
   #ViewContainer #iconcontainer {
     position: absolute;
     top: 32%;

@@ -1,216 +1,359 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-body, html{height:100%;width:100%;padding:0;margin:0; font-family: "Trebuchet Ms";}
-
-#ViewContainer {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	min-width: 1000px;
-	min-height: 600px;
-	overflow: hidden;
-	
-	.backgroundimage{
-			height:100%;
-			width:100%;
-
-		#background-top{
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 86px; 
-			background-image:url(../images/background-up.png);
-			background-repeat: no-repeat;	
-			background-position: center;
-		}
-
-		#background-middle{
-	    position: absolute;
-	    top: 86px;
-			width: 90em;
-			height: 80%;
-			background-image:url(../images/background-middle.jpg);
-			background-repeat: no-repeat;
-			background-position: center;	
-		}
-
-		#background-bottom{
-		 	width: 100%;
-			height: 100px;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			background-image:url(../images/background-bottom.png);
-			background-repeat: no-repeat;
-			background-position: center;	
-		}
-	}
-
-	#logo{
-			position: absolute;
-			top: 0;
-			left: 0;
-			max-width: 20%;
-			height: auto; 
-			z-index:1000;
-			cursor: pointer;
-	}
-
-	#logodown{
-			position: absolute;
-			bottom: 0;
-			right: 0;
-			max-width: 20%;
-			height: auto;
-			z-index: 3000; 
-	}
-	
-	#LoginButton{
-		position: absolute;
-		top: 64;
-		right: 50;
-		width: 13%;
-		cursor: pointer;
-	}
-
-	#LoginContainer{
-		position: absolute;
-		top: 23%;
-		right: 50%;
-		margin-left: 22%;
-		width: 70%;
-		#LoginFrame{
-		}
-		#LoginForm{
-
-			// width: 450px;
-			
-		}
-	}
-
-	#iconcontainer{
-			position: absolute;
-			top: 32%;
-			left: 25%;
-			width: 50%;
-			height: 50%;
-			z-index: 2000;
-			overflow-x: scroll;
-    	overflow-y: none;
-   		white-space:nowrap;
-			.icon{
-					float:left;
-					display:inline-block;
-					width:30%;
-					cursor: pointer;
-					img{
-							
-					}
-			}
-
-			.icon:nth-child(1){
-		
-			}
-
-			.icon:nth-child(2){
-				width: 40%;
-			}
-
-			.icon:nth-child(3){
-			
-			}
-	}
-
-	#tv{
-		position: absolute;
-		bottom: 37%;
-		left: 50%;
-		min-width: 500px;
-		margin-left: -22%;
-		width: 612px;
-	}
-
-	#tablestuff{
-		position: absolute;
-		bottom: 48px;
-		left: 50%;
-		margin-left: -43%; 
-		max-width: 80%; 
-	}
-
-	#ButtonContainer {
-		position: absolute;
-		left: 50%;
-		color: white;
-		z-index:5000;
-		bottom: 6%;
-		width: 86%;
-		margin-left: -38%;
-		height: 30%;
-	
-		.featureButton{
-			width: 33%;
-			height: 100%;
-			float: left;
-			cursor: pointer;
-		}
-
-		.featureButton:nth-child(2){
-			margin-left: -5.5%;
-		}
-
-		// .featureButton:nth-child(2)::after{
-		// 	content: "Control de directo";
-		// 	color: white;
-		// }
-
-		.featureButton:nth-child(3){
-			margin-left: -5.5%;
-		}
-
-		.featureButton .normal{
-			background-image:url(../images/feature_button_side.png);
-			display:block;
-		}
-		.featureButton:hover .normal{
-			display:none;
-		}
-		.featureButton .active{
-			background-image:url(../images/feature_button_side_active.png);
-			display:none;
-		}
-		.featureButton:hover .active{
-			display:block;
-		}
-		.featureButton:nth-child(2) .normal{
-			background-image:url(../images/feature_button_middle.png);
-		}
-		.featureButton:nth-child(2) .active{
-			background-image:url(../images/feature_button_middle_active.png);
-		}
-		.featureButton:nth-child(3) .normal{
-			background-image:url(../images/feature_button_side.png);
-		}
-		.featureButton:nth-child(3) .active{
-			background-image:url(../images/feature_button_side_active.png);
-		}
-		.featureButton:nth-child(3) div {
-			-moz-transform: scaleX(-1);
-		  -o-transform: scaleX(-1);
-		  -webkit-transform: scaleX(-1);
-		  transform: scaleX(-1);
-		  filter: FlipH;
-		  -ms-filter: "FlipH";
-		}
-		.featureButton div {
-			background-repeat: no-repeat;	
-			background-size: 100% 100%;
-			width:100%;
-			height:100%;
-		}
-	}
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: "Trebuchet Ms";
 }
+$purple: #7d187b;
+::-webkit-input-placeholder {
+    font-family: "Trebuchet Ms"
+}
+::-moz-placeholder {
+    font-family: "Trebuchet Ms"
+}
+:-ms-input-placeholder {
+    font-family: "Trebuchet Ms"
+}
+input:-moz-placeholder {
+    font-family: "Trebuchet Ms"
+}
+#ViewContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    min-height: 600px;
+    overflow: hidden;
+    .backgroundimage {
+        height: 100%;
+        width: 100%;
+        #background-top {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 86px;
+            background-image: url(../images/background-up.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #background-middle {
+            position: absolute;
+            top: 86px;
+            width: 90em;
+            height: 80%;
+            background-image: url(../images/background-middle.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #background-bottom {
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-image: url(../images/background-bottom.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    #logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 20%;
+        height: auto;
+        z-index: 1000;
+        cursor: pointer;
+    }
+    #logodown {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-width: 20%;
+        height: auto;
+        z-index: 3000;
+    }
+    #LoginButtonContainer {
+        position: absolute;
+        top: 64;
+        right: 50;
+        cursor: pointer;
+        #LoginButton {
+            width: 200px;
+        }
+        p {
+            color: white;
+            position: absolute;
+            top: 5;
+            right: 44;
+            font-size: 0.8em;
+        }
+    }
 
+    div#RegisterContainer {
+        position: absolute;
+        top: 13%;
+        left: 50%;
+        margin-left: -24%;
+        #LoginFrame {
+            width: 80%;
+            height: auto;
+        }
+        p {
+            color: $purple;
+            position: absolute;
+            top: 85;
+            right: 53%;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+
+       div#OkButton{
+        	position: relative;
+    		top: -28;
+    		left: 123;
+        	background-image: url(../images/ok-button.png);
+        	background-size: 65%; 
+    		height: 51px;
+    		width: 61px; 
+    		margin-left: 434px;	
+    		background-repeat: no-repeat;
+        }
+
+        div#BackButton{
+        	background-image: url(../images/back-button.png);
+    		background-repeat: no-repeat;
+    		background-size: 68%;
+    		cursor: pointer;
+        	position: relative;
+    		top: -78;
+    		left: 29;
+        	height: 63px;
+    		width: 161px;
+        }
+
+        form#RegisterForm1 {
+            position: absolute;
+            top: 24%;
+            left: 32%;
+            margin-left: -22%;
+            text-align: center;
+            width: 30%;
+            input {
+                width: 232px;
+                height: 30px;
+                padding: 5px;
+            }
+            input:focus {
+                outline: none;
+            }
+            input {
+                margin-top: 15px;      
+            }
+        }
+
+        form#RegisterForm2 {
+            position: absolute;
+            top: 24%;
+            left: 62%;
+            margin-left: -22%;
+            text-align: center;
+            width: 30%;
+            input {
+                width: 232px;
+                height: 30px;
+                padding: 5px;
+            }
+            input:focus {
+                outline: none;
+            }
+            input {
+                margin-top: 15px;      
+            }
+            input:nth-child(3),
+            input:nth-child(4),
+            input:nth-child(5),
+            input:nth-child(6)
+            {
+            	width: 23%;
+            }
+            input:nth-child(7),
+            input:nth-child(8)
+            {
+            	width: 48%;
+            }
+        }
+    }
+
+        div#LoginContainer {
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        margin-left: -22%;
+        #LoginFrame {
+            width: 75%;
+            height: auto;
+        }
+        p {
+            color: $purple;
+            position: absolute;
+            top: 85;
+            right: 53%;
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+
+       div#OkButton{
+        	background-image: url(../images/ok-button.png);
+        	background-size: 65%; 
+    		height: 51px;
+    		width: 61px; 
+    		margin-left: 434px;	
+        	position: relative;
+    		top: -169px;
+    		background-repeat: no-repeat;
+        }
+
+        div#RegisterButton{
+        	background-image: url(../images/register-button.png);
+    		background-repeat: no-repeat;
+    		background-size: 68%;
+    		cursor: pointer;
+        	position: relative;
+    		top: -169px;
+    		left: 432;
+        	height: 52px;
+    		width: 74px;
+        }
+
+        form#LoginForm {
+            position: absolute;
+            top: 42%;
+            left: 40%;
+            margin-left: -22%;
+            text-align: center;
+            width: 30%;
+            input {
+                width: 267px;
+                height: 35px;
+                padding: 5px;
+            }
+            input:focus {
+                outline: none;
+            }
+            input:nth-child(2) {
+                margin-top: 20px;
+            }
+
+        }
+    }
+
+    #iconcontainer {
+        position: absolute;
+        top: 32%;
+        left: 25%;
+        width: 50%;
+        height: 50%;
+        z-index: 2000;
+        overflow-x: scroll;
+        overflow-y: none;
+        white-space: nowrap;
+        .icon {
+            float: left;
+            display: inline-block;
+            width: 30%;
+            cursor: pointer;
+            img {}
+        }
+        .icon:nth-child(1) {} .icon:nth-child(2) {
+            width: 40%;
+        }
+        .icon:nth-child(3) {}
+    }
+    #tv {
+        position: absolute;
+        bottom: 37%;
+        left: 50%;
+        min-width: 500px;
+        margin-left: -22%;
+        width: 612px;
+    }
+    #tablestuff {
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        margin-left: -43%;
+        max-width: 80%;
+    }
+    #ButtonContainer {
+        position: absolute;
+        left: 50%;
+        color: white;
+        z-index: 5000;
+        bottom: 6%;
+        width: 86%;
+        margin-left: -38%;
+        height: 30%;
+        .featureButton {
+            width: 33%;
+            height: 100%;
+            float: left;
+            cursor: pointer;
+        }
+        .featureButton:nth-child(2) {
+            margin-left: -5.5%;
+        }
+        // .featureButton:nth-child(2)::after{
+        // 	content: "Control de directo";
+        // 	color: white;
+        // }
+        .featureButton:nth-child(3) {
+            margin-left: -5.5%;
+        }
+        .featureButton .normal {
+            background-image: url(../images/feature_button_side.png);
+            display: block;
+        }
+        .featureButton:hover .normal {
+            display: none;
+        }
+        .featureButton .active {
+            background-image: url(../images/feature_button_side_active.png);
+            display: none;
+        }
+        .featureButton:hover .active {
+            display: block;
+        }
+        .featureButton:nth-child(2) .normal {
+            background-image: url(../images/feature_button_middle.png);
+        }
+        .featureButton:nth-child(2) .active {
+            background-image: url(../images/feature_button_middle_active.png);
+        }
+        .featureButton:nth-child(3) .normal {
+            background-image: url(../images/feature_button_side.png);
+        }
+        .featureButton:nth-child(3) .active {
+            background-image: url(../images/feature_button_side_active.png);
+        }
+        .featureButton:nth-child(3) div {
+            -moz-transform: scaleX(-1);
+            -o-transform: scaleX(-1);
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            filter: FlipH;
+            -ms-filter: "FlipH";
+        }
+        .featureButton div {
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
