@@ -6,6 +6,7 @@
 
 <body>
     <div id="ViewContainer">
+        
         <div class="backgroundimage">
             <div id="background-top">
             </div>
@@ -15,61 +16,90 @@
             </div>
         </div>
 
-
-
-        <div id="iconcontainer">
-            <img src="assets/images/como_jugar.png" alt="como_jugar" class="icon" />
-            <img src="assets/images/jugar.png" alt="jugar" class="icon" />
-            <img src="assets/images/premios.png" alt="premios" class="icon" />
-        </div>
-
-
-
-
-        <div id="LoginContainer">
-            <img src="assets/images/login-frame.png" alt="LoginFrame" id="LoginFrame" />
-            <p>&iexcl;Hola concursante!</p>
-            <form action="login" method="post" id="LoginForm">
-                <input type="email" name="Email" placeholder="Email" />
-                <input type="password" name="Password" placeholder="Contrase&ntilde;a" />
-            </form>
-            <div id="OkButton"></div>
-            <div id="RegisterButton"></div>
-        </div>
-
-         <div id="RegisterContainer">
-            <img src="assets/images/login-frame.png" alt="LoginFrame" id="LoginFrame" />
-            <p>&iexcl;Bienvenido concursante!</p>
-            <form action="login" method="post" id="RegisterForm1">
-                <input type="email" name="Email" placeholder="Email" />
-                <input type="password" name="Password" placeholder="Nombre" />
-                <input type="email" name="Email" placeholder="Direcci&oacute;n" />
-                <input type="password" name="Password" placeholder="Ciudad" />
-            </form> 
-            <form action="login" method="post" id="RegisterForm2">
-                <input type="email" name="Email" placeholder="Contrase&ntilde;a" />
-                <input type="password" name="Password" placeholder="Appellidos" />
-                <input type="email" name="Email" placeholder="Bloque" />
-                <input type="password" name="Password" placeholder="Esc" />
-                <input type="password" name="Password" placeholder="Piso" />
-                <input type="password" name="Password" placeholder="Puerta" />
-                <input type="password" name="Password" placeholder="CP" />
-                <input type="password" name="Password" placeholder="Tel&eacute;fono" />
-            </form>
-            <div id="OkButton"></div>
-            <div id="BackButton"></div>
-        </div>
-
-        <img src="assets/images/logo.png" alt="Logo" id="logo" />
-        <img src="assets/images/logo-down.png" alt="Logo-down" id="logodown" />
-
         <div id="LoginButtonContainer">
-            <img src="assets/images/loginButton.png" alt="loginButton" id="LoginButton" />
+            <img src="assets/images/loginButton.png" alt="loginButton"/>
             <p>Login/Registro</p>
         </div>
 
+        <div id="HomeView" class="view">
+            <img src="assets/images/como_jugar.png" alt="como_jugar"/>
+            <img src="assets/images/jugar.png" alt="jugar"/>
+            <img src="assets/images/premios.png" alt="premios"/>
+        </div>
 
-        <div id="Livingroom">
+        <div id="LoginView" class="view">
+	        <div class="panel">
+	        	<div class="panelBorder">
+	            <h1>&iexcl;Hola concursante!</h1>
+	            <div id="loginContentContainer">
+		            <p class="left"> Si ya has participado otras veces introduce tu usuario y sigue jugando.</p>
+		          	<div id="loginFormContainer">
+			            <div>
+				            <form action="login" method="post" id="LoginForm">
+				                <input type="email" name="Email" placeholder="Email" />
+				                <input type="password" name="Password" placeholder="Contrase&ntilde;a" />
+				            </form>
+				          </div>
+			           	<div class="okButton fillPurpleButton right">OK</div>
+			          </div>
+		            <a id="PasswordForgotten">He olvidado mi contrase&ntilde;a</a>
+		            
+		            <div id="LoginRegisterContainer">
+		            <div id = "RegisterButton" class="fillPurpleButton right"></div>
+		            <p id="RegisterNow" class="rightAlign">Si es tu primera vez, reg&iacute;strate para continuar.</p>
+		            </div>
+	            </div>
+	        	</div>
+	        </div>
+	        <div class="PanelFooterContainer">
+	        	<div class="backButton outlinePurpleButton">Volver</div>
+        	</div>
+	      </div>
+
+        <div id="RegisterView" class="view">
+	        <div class="panel">
+	         	<div class="panelBorder">
+	            <h1>&iexcl;Bienvenido concursante!</h1>
+	            <p>Antes de empezar rellana todos tus datos para poder ponernos en contacto contigo en caso de resultar ganador:</p>
+	            
+	            <form action="login" method="post" id="RegisterForm1">
+	            	<div class="halfContainer">
+	                <input type="email" name="Email" placeholder="Email" />
+	                <input type="password" name="Password" placeholder="Nombre" />
+	                <input type="email" name="Email" placeholder="Direcci&oacute;n" />
+	                <input type="password" name="Password" placeholder="Ciudad" />
+	               </div>
+	               <div class="halfContainer">
+	                <input type="password" name="Email" placeholder="Contrase&ntilde;a" />
+	                <input type="password" name="Password" placeholder="Appellidos" />
+	                <div id="addressContainer">
+		                <input type="email" name="Bloque" placeholder="Bloque" />
+		                <input type="text" name="Esc" placeholder="Esc" />
+		                <input type="text" name="Piso" placeholder="Piso" />
+		                <input type="text" name="Puerta" placeholder="Puerta" />
+	                </div>
+	                <div id="telContainer">
+		                <input type="text" name="CP" placeholder="CP" />
+		                <input type="text" name="Telefono" placeholder="Tel&eacute;fono" />
+	               	</div>
+	               </div>
+	            </form>
+	            <div id="codeinput" >
+	            	<p>Comprueba ahora mismo tu c&oacute;digo y gana <strong>3.000&euro;</strong> al instante.</p>
+	            	<input type="text" name="inputcode" placeholder="XXXXXXXXXXXXX" >
+	            </div>
+	            <div id="accept"> He leido y acepto las <em class="underline">bases legales</em> <input type="checkbox" name="accept"/> </div>
+	        	</div>
+	        </div>
+	        <div class="PanelFooterContainer">
+		        <div class="backButton outlinePurpleButton">Volver</div>
+		        <div class="okButton fillPurpleButton right">OK</div>
+	        </div>
+	      </div>
+        <img src="assets/images/logo.png" alt="Logo" id="logo" />
+        <img src="assets/images/logo-down.png" alt="Logo-down" id="logodown" />
+
+        <div id="GameView" class="view">
             <img src="assets/images/tv.png" alt="tv" id="tv" />
             <img src="assets/images/tableAndStuff.png" alt="Logo-down" id="tablestuff" />
 
@@ -87,11 +117,10 @@
                     <div class="active"></div>
                 </div>
             </div>
-            <div>
-
-            </div>
+        </div>
             <script type="text/javascript" src="assets/javascripts/navigation.js"></script>
             <script src="assets/javascripts/jquery.min.js" type="text/javascript"></script>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
 </body>
 
 </html>
