@@ -24,7 +24,7 @@ window.onload = function() {
     // AUDIO_VIEW = $("#ConnectView").css();
 
 
-    currentView = HOWTOPLAY_VIEW;
+    currentView = HOME_VIEW;
     currentView.css({left:"50%"});
 
     $("img:nth-child(1)").click(function () {nextView(HOWTOPLAY_VIEW)
@@ -39,6 +39,9 @@ window.onload = function() {
 		$("#RegisterButton").click(function () {nextView(REGISTER_VIEW)});
     $(".BackButton").click(function () {nextView(HOME_VIEW)});
     
+    $(".dot:nth-child(1)").click(function () { 
+    	$(".dot:nth-child(1)").addClass("active");
+    	});
 
     $( window ).resize(resize);
     resize();

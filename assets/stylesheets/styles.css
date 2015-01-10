@@ -444,6 +444,29 @@ input {
       width: 270px;
       height: 120px;
       margin-left: -135px; }
+    #ViewContainer #HowToPlayView #dotContainer {
+      display: flex;
+      margin-top: 30%;
+      width: 45px;
+      margin-top: 50px;
+      margin-left: -23.5px; }
+      #ViewContainer #HowToPlayView #dotContainer .dot .normal {
+        background-image: url(../images/circle-stroke.png);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        display: inline-block;
+        width: 15px;
+        height: 16px;
+        cursor: pointer; }
+      #ViewContainer #HowToPlayView #dotContainer .dot .active {
+        background-image: url(../images/circle-fill.png);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        display: inline-block;
+        width: 15px;
+        height: 16px;
+        display: none;
+        cursor: pointer; }
   #ViewContainer #GameView {
     width: 100%;
     height: 100%;

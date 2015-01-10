@@ -597,6 +597,34 @@ input {
 				height: 120px;
 				margin-left: -135px;
 	 		}
+	 		#dotContainer{
+	 			display: flex;
+	 			margin-top: 30%;
+	 			width: 45px;
+	 			margin-top: 50px;
+	 			margin-left: -23.5px;
+
+	 			.dot .normal{
+	 				background-image: url(../images/circle-stroke.png);
+	 				background-repeat: no-repeat;
+	 				background-size: 60%;
+	 				display: inline-block;
+	 				width: 15px;
+	 				height: 16px;
+	 				cursor: pointer;
+	 			}
+
+	 			.dot .active{
+	 				background-image: url(../images/circle-fill.png);
+	 				background-repeat: no-repeat;
+	 				background-size: 60%;
+	 				display: inline-block;
+	 				width: 15px;
+	 				height: 16px;
+	 				display: none;
+	 				cursor: pointer;
+	 			}
+	 		}
     	}
 
     
