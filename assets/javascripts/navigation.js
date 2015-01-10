@@ -23,10 +23,14 @@ window.onload = function() {
     HOWTOPLAY_VIEW = $("#GameView").add($("#HowToPlayView"));
     // AUDIO_VIEW = $("#ConnectView").css();
 
-    currentView = HOWTOPLAY_VIEW ;
+
+    currentView = HOWTOPLAY_VIEW;
     currentView.css({left:"50%"});
 
-    $("img:nth-child(1)").click();
+    $("img:nth-child(1)").click(function () {nextView(HOWTOPLAY_VIEW)
+    		var selectTV = $("#GameView").find($("#newTV"));
+	    	selectTV.append($(".content")); 
+    });
     $("img:nth-child(2)").click(function () {nextView(GAME_VIEW)});
     $("img:nth-child(3)").click(function () {nextView(PRIZE_VIEW)});
 

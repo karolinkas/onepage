@@ -17,6 +17,8 @@ $grey: #cfc9c6;
 $lightpink: #b9009c;
 $darkpink: #54297A;
 $buttoncolor: #6d1f80;
+$gradientTVfirst: #6a1f7b;
+$gradientTVsecond: #a02dbb;
 
 	::-webkit-input-placeholder {
 	    font-family: "Trebuchet Ms";
@@ -168,6 +170,14 @@ input {
 .panelFooterContainer {
 	margin-top: 1em;
 	width: 100%;
+}
+
+.content{
+		background: linear-gradient(36deg, $gradientTVfirst 0%, $gradientTVsecond 100%) 15%;
+		box-shadow: inset 0 0 2em rgba(0,0,0,0.5);
+		width: 94%;
+		height: 92%;
+		margin: 1% 1% 1% 3.5%; 
 }
 
 
@@ -577,25 +587,44 @@ input {
             margin-right: 3%;
         }
     }
+	
+	 #HowToPlayView{
+	 	z-index: 1;
+	 		#HowToPlayTitle{
+				background-image: url(../images/como_jugar_title.png);
+				background-size: cover;
+				width: 270px;
+				height: 120px;
+				margin-left: -135px;
+	 		}
+    	}
 
-    #HowToPlayView{
-		.content{
-			
-		}
-
-    }
     
     #GameView {
     	 width: 100%;
     	 height: 100%;
     	 margin-left: -50%;
-	    #tv {
+	  	#newTv {
+		  	background-image: url(../images/tv.png);
+		  	background-size: cover;
+		  	background-repeat: no-repeat;
+		  	background-position:0 -10px;
+		    position: absolute;
+		    bottom: 37%;
+		    left: 50%;
+		    min-width: 500px;
+		    margin-left: -306px;
+		    width: 612px;
+		    height: 354px;
+		}
+	    #tv {    	
 	        position: absolute;
 	        bottom: 37%;
 	        left: 50%;
 	        min-width: 500px;
 	        margin-left: -306px;
 	        width: 612px;
+	        opacity: 0.5;
 	    }
 	    #tablestuff {
 	        position: absolute;
@@ -670,5 +699,7 @@ input {
 	            height: 100%;
 	        }
 	    }
+	
+   
 	}
 }
