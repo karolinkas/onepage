@@ -3,21 +3,32 @@ var currentView;
 
 var HOME_VIEW;
 var LOGIN_VIEW;
-var REGISTER_VIEW;
 var GAME_VIEW;
+var WINNER_VIEW;
+var LOSER_VIEW;
+var PRIZE_VIEW;
+var CONNECT_VIEW;
+var AUDIO_VIEW;
+var HOWTOPLAY_VIEW;
 
 window.onload = function() {
     HOME_VIEW = $("#HomeView");
     LOGIN_VIEW = $("#LoginView");
     REGISTER_VIEW = $("#RegisterView");
     GAME_VIEW = $("#GameView");
+    WINNER_VIEW = $("#WinnerView");
+    LOSER_VIEW = $("#LoserView");
+    PRIZE_VIEW = $("#PrizeView");
+    CONNECT_VIEW = $("#ConnectView");
+    HOWTOPLAY_VIEW = $("#GameView").add($("#HowToPlayView"));
+    // AUDIO_VIEW = $("#ConnectView").css();
 
-    currentView = HOME_VIEW;
+    currentView = HOWTOPLAY_VIEW ;
     currentView.css({left:"50%"});
 
     $("img:nth-child(1)").click();
     $("img:nth-child(2)").click(function () {nextView(GAME_VIEW)});
-    $("img:nth-child(3)").click();
+    $("img:nth-child(3)").click(function () {nextView(PRIZE_VIEW)});
 
     $("#logo").click(function () {nextView(HOME_VIEW)});
 		$("#LoginButtonContainer").click(function () {nextView(LOGIN_VIEW)});
@@ -37,6 +48,9 @@ function resize() {
 
 	y = (h - REGISTER_VIEW.height()) * .5;
 	REGISTER_VIEW.css({top:y});
+
+	y = (h - PRIZE_VIEW.height()) * .5;
+	PRIZE_VIEW.css({top:y});
 }
 
 function nextView(view) {

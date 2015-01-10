@@ -70,6 +70,15 @@ input {
   color: #6d1f80;
   box-shadow: 0 0 1em grey; }
 
+.fillWhiteButton {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 1em grey;
+  padding: 7 0.3em;
+  box-shadow: 2px 2px 10px #525252;
+  color: #7d187b; }
+
 .fillPurpleButton {
   cursor: pointer;
   border-radius: 5px;
@@ -85,6 +94,14 @@ input {
   padding: 0.6em 2.0em;
   background-position: 9.5px 9.7px;
   background-repeat: no-repeat; }
+
+.purplebox {
+  background: linear-gradient(137deg, #b9009c 0%, #54297A 100%) 15%;
+  width: 100%;
+  height: 100%;
+  border-radius: 5;
+  padding: 3em 6em;
+  box-shadow: 0 0 1em grey; }
 
 .view {
   position: absolute;
@@ -106,18 +123,9 @@ input {
   border: 3px solid #b9009c;
   box-sizing: border-box;
   padding: 1em 2em 1em 2em;
-  overflow: auto;
+  overflow: hidden;
   border-radius: 5;
   box-shadow: 0 0 1em rgba(185, 0, 156, 0.2), inset 0 0 2em rgba(255, 255, 255, 0.4); }
-
-.panelBorder:after {
-  content: "";
-  position: relative;
-  top: 10px;
-  left: 10px;
-  background-color: black;
-  width: 50%;
-  height: 50%; }
 
 .panelFooterContainer {
   margin-top: 1em;
@@ -144,7 +152,7 @@ input {
     #ViewContainer .backgroundimage #background-middle {
       top: 60px;
       width: 100%;
-      height: 80%;
+      height: 90%;
       background-image: url(../images/background-middle.jpg); }
     #ViewContainer .backgroundimage #background-bottom {
       width: 100%;
@@ -170,7 +178,8 @@ input {
     position: absolute;
     top: 30px;
     right: 20px;
-    cursor: pointer; }
+    cursor: pointer;
+    z-index: 10000; }
     #ViewContainer #LoginButtonContainer img {
       width: 75%; }
     #ViewContainer #LoginButtonContainer p {
@@ -254,6 +263,127 @@ input {
         text-decoration: underline; }
       #ViewContainer #RegisterView #accept input {
         width: auto; }
+  #ViewContainer #WinnerView {
+    width: 30%;
+    margin-left: -15%; }
+    #ViewContainer #WinnerView .purplebox h1 {
+      color: white;
+      opacity: 0.9 !important;
+      font-size: 1.1em; }
+    #ViewContainer #WinnerView .purplebox p {
+      color: white;
+      opacity: 0.9 !important;
+      line-height: 1.5; }
+    #ViewContainer #WinnerView .purplebox .fillWhiteButton {
+      width: 20%;
+      text-align: center;
+      margin-top: 8%;
+      margin-left: 40%; }
+  #ViewContainer #LoserView {
+    width: 30%;
+    margin-left: -15%; }
+    #ViewContainer #LoserView .purplebox {
+      background: linear-gradient(137deg, #867fd3 0%, #716da6 50%, #524d86 100%) 15% !important; }
+      #ViewContainer #LoserView .purplebox h1 {
+        color: white;
+        opacity: 0.9 !important;
+        font-size: 1.1em; }
+      #ViewContainer #LoserView .purplebox p {
+        color: white;
+        opacity: 0.9 !important;
+        line-height: 1.5; }
+      #ViewContainer #LoserView .purplebox .fillWhiteButton {
+        width: 20%;
+        text-align: center;
+        margin-top: 8%;
+        margin-left: 39%;
+        color: #716da6;
+        font-size: 0.8em; }
+  #ViewContainer #PrizeView {
+    width: 38%;
+    min-width: 520px;
+    margin-left: -19%; }
+    #ViewContainer #PrizeView .panelBorder {
+      padding-left: 0em !important; }
+      #ViewContainer #PrizeView .panelBorder #IconAndText {
+        background-image: url(../images/price.png);
+        background-repeat: no-repeat;
+        background-size: 6em 7em;
+        background-position: -1em -1em;
+        min-height: 200px;
+        float: left;
+        width: 50%;
+        margin-top: 40px; }
+        #ViewContainer #PrizeView .panelBorder #IconAndText h1 {
+          margin-left: 70px; }
+        #ViewContainer #PrizeView .panelBorder #IconAndText p {
+          margin-left: 70px;
+          width: 220px; }
+      #ViewContainer #PrizeView .panelBorder #Image {
+        background-image: url(../images/prize-tv.png);
+        background-repeat: no-repeat;
+        height: 200px;
+        background-size: 170px;
+        position: relative;
+        left: 64%;
+        margin-top: 19px;
+        margin-left: 15px;
+        padding-left: 25px;
+        padding-right: 25px; }
+    #ViewContainer #PrizeView .puntosButton {
+      width: 53px;
+      height: 10%;
+      margin-left: 84.5%;
+      font-size: 0.7em;
+      opacity: 0.9;
+      padding: 0.7em 1.5em 0.8em 1.5em;
+      box-shadow: 0 0 1em grey; }
+  #ViewContainer #ConnectView {
+    height: 310px;
+    width: 500px;
+    margin-left: -250px; }
+    #ViewContainer #ConnectView #IphoneIcon {
+      background-image: url(../images/iphone-icon.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 500px;
+      height: 25px;
+      position: relative;
+      left: 50%;
+      margin-top: 20px; }
+    #ViewContainer #ConnectView #Iphone {
+      background-image: url(../images/iphone.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 300px;
+      height: 139px;
+      position: absolute;
+      left: 50%;
+      margin-left: -150px;
+      bottom: 0; }
+      #ViewContainer #ConnectView #Iphone #ShowUrl {
+        position: relative;
+        top: 83px;
+        font-size: 0.7em;
+        left: 48px;
+        opacity: 0.6;
+        width: 170px; }
+    #ViewContainer #ConnectView .noPhoneButton {
+      width: 25%;
+      box-shadow: 0 0 1em grey;
+      padding: 0.5em 0.5em 0.6em 0.7em; }
+    #ViewContainer #ConnectView .continueButton {
+      width: 2%;
+      background-image: url(../images/arrow-white.png);
+      background-size: 18%;
+      background-position: 14px 9px;
+      margin-left: 85%;
+      box-shadow: 0 0 1em grey;
+      float: right;
+      padding: 1.4em;
+      margin-top: -23px;
+      float: right;
+      margin-top: -28px; }
   #ViewContainer #LoginView {
     width: 42%;
     margin-left: -21%; }
@@ -290,10 +420,10 @@ input {
     #ViewContainer #LoginView #LoginRegisterContainer {
       margin-top: 2.5em; }
     #ViewContainer #LoginView #RegisterButton {
-      background-image: url(../images/register-button.png);
-      background-size: 110%;
+      background-image: url(../images/register-icon.png);
+      background-size: 75%;
       padding: 1.5em 2.1em;
-      background-position: -0.6 -0.3em; }
+      background-position: 3.4px 0.5em; }
     #ViewContainer #LoginView #RegisterNow {
       max-width: 70%;
       float: right;
@@ -308,7 +438,7 @@ input {
       bottom: 37%;
       left: 50%;
       min-width: 500px;
-      margin-left: -24%;
+      margin-left: -306px;
       width: 612px; }
     #ViewContainer #GameView #tablestuff {
       position: absolute;
