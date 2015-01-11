@@ -270,6 +270,8 @@ input {
         text-decoration: underline; }
       #ViewContainer #RegisterView #accept input {
         width: auto; }
+    #ViewContainer #RegisterView .okButton {
+      box-shadow: 0 0 1em grey; }
   #ViewContainer #WinnerView {
     width: 30%;
     margin-left: -15%; }
@@ -450,7 +452,7 @@ input {
       width: 45px;
       margin-top: 50px;
       margin-left: -23.5px; }
-      #ViewContainer #HowToPlayView #dotContainer .dot .normal {
+      #ViewContainer #HowToPlayView #dotContainer .normal {
         background-image: url(../images/circle-stroke.png);
         background-repeat: no-repeat;
         background-size: 60%;
@@ -458,14 +460,13 @@ input {
         width: 15px;
         height: 16px;
         cursor: pointer; }
-      #ViewContainer #HowToPlayView #dotContainer .dot .active {
+      #ViewContainer #HowToPlayView #dotContainer .active {
         background-image: url(../images/circle-fill.png);
         background-repeat: no-repeat;
         background-size: 60%;
         display: inline-block;
         width: 15px;
         height: 16px;
-        display: none;
         cursor: pointer; }
   #ViewContainer #GameView {
     width: 100%;

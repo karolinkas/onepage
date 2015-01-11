@@ -61,39 +61,41 @@
 	         	<div class="panelBorder">
 	            <h1>&iexcl;Bienvenido concursante!</h1>
 	            <p>Antes de empezar rellana todos tus datos para poder ponernos en contacto contigo en caso de resultar ganador:</p>
-	            
-	            <form action="login" method="post" id="RegisterForm1">
+	            <form action="/users" name="RegisterForm" method="post" id="RegisterForm">
+	           
 	            	<div class="halfContainer">
-	                <input type="email" name="Email" placeholder="Email" />
-	                <input type="password" name="Password" placeholder="Nombre" />
-	                <input type="email" name="Email" placeholder="Direcci&oacute;n" />
-	                <input type="password" name="Password" placeholder="Ciudad" />
+	                <input type="email" name="email" placeholder="Email"/>
+	                <input type="text" name="Name" placeholder="Nombre"/>
+	                <input type="text" name="directions" placeholder="Direcci&oacute;n" />
+	                <input type="text" name="city" placeholder="Ciudad"/>
 	               </div>
 	               <div class="halfContainer">
-	                <input type="password" name="Email" placeholder="Contrase&ntilde;a" />
-	                <input type="password" name="Password" placeholder="Appellidos" />
+	                <input type="password" name="password" placeholder="Contrase&ntilde;a"/>
+	                <input type="text" name="lastName" placeholder="Appellidos"/>
 	                <div id="addressContainer">
-		                <input type="email" name="Bloque" placeholder="Bloque" />
-		                <input type="text" name="Esc" placeholder="Esc" />
-		                <input type="text" name="Piso" placeholder="Piso" />
-		                <input type="text" name="Puerta" placeholder="Puerta" />
+		                <input type="number" name="bloque" placeholder="Bloque" />
+		                <input type="text" name="esc" placeholder="Esc" />
+		                <input type="number" name="piso" placeholder="Piso" />
+		                <input type="number" name="puerta" placeholder="Puerta" />
 	                </div>
 	                <div id="telContainer">
-		                <input type="text" name="CP" placeholder="CP" />
-		                <input type="text" name="Telefono" placeholder="Tel&eacute;fono" />
+		                <input type="text" name="cp" placeholder="CP" />
+		                <input type="tel" name="telefono" placeholder="Tel&eacute;fono" />
 	               	</div>
 	               </div>
 	            </form>
 	            <div id="codeinput" >
 	            	<p>Comprueba ahora mismo tu c&oacute;digo y gana <strong>3.000&euro;</strong> al instante.</p>
-	            	<input type="text" name="inputcode" placeholder="XXXXXXXXXXXXX" >
+	            	<input type="text" name="inputcode" placeholder="XXXXXXXXXXXXX"/>
 	            </div>
 	            <div id="accept"> He leido y acepto las <em class="underline">bases legales</em> <input type="checkbox" name="accept"/> </div>
 	        	</div>
 	        </div>
 	        <div class="PanelFooterContainer">
 		        <div class="backButton outlinePurpleButton">Volver</div>
-		        <div class="okButton fillPurpleButton right">OK</div>
+		        <div id="submitButton"class="okButton fillPurpleButton right">OK</div>
+		        
+		     
 	        </div>
 	      </div>
         <img src="assets/images/logo.png" alt="Logo" id="logo" />
@@ -164,18 +166,9 @@
       		<div class="content">
       		</div>
     			<div id="dotContainer"> 
-    				<div class="dot">
-    					 <div class="normal"></div>
-               <div class="active"></div>
-    				</div> 
-    				<div class="dot">
-    					 <div class="normal"></div>
-               <div class="active"></div>
-    				</div> 
-						<div class="dot">
-							 <div class="normal"></div>
-               <div class="active"></div>
-						</div> 
+    				<div class="dot normal"></div>	   
+            <div class="dot normal"></div>	
+            <div class="dot normal"></div>	 			 
     			</div>
       	</div>
 
@@ -201,8 +194,9 @@
             </div>
         </div>
             <script type="text/javascript" src="assets/javascripts/navigation.js"></script>
+            <script type="text/javascript" src="assets/javascripts/validations.js"></script>
             <script src="assets/javascripts/jquery.min.js" type="text/javascript"></script>
-            <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"></script>
+            <script src="assets/javascripts/TweenMax.min.js" type="text/javascript"></script>
 </body>
 
 </html>

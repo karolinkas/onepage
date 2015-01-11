@@ -66,6 +66,11 @@ input {
     padding: 0.8em 0.6em 0.8em 0.5em;
     border: 0;
     border: none;
+
+}
+
+input:focus { 
+   
 }
 
 .right {
@@ -357,6 +362,9 @@ input {
             	width: auto;
             }
         }
+        .okButton{
+        	box-shadow: 0 0 1em grey;
+        }
     }
 
     #WinnerView{
@@ -604,7 +612,7 @@ input {
 	 			margin-top: 50px;
 	 			margin-left: -23.5px;
 
-	 			.dot .normal{
+	 			.normal{
 	 				background-image: url(../images/circle-stroke.png);
 	 				background-repeat: no-repeat;
 	 				background-size: 60%;
@@ -614,15 +622,15 @@ input {
 	 				cursor: pointer;
 	 			}
 
-	 			.dot .active{
+	 			.active{
 	 				background-image: url(../images/circle-fill.png);
 	 				background-repeat: no-repeat;
 	 				background-size: 60%;
 	 				display: inline-block;
 	 				width: 15px;
 	 				height: 16px;
-	 				display: none;
 	 				cursor: pointer;
+	 				// display: none;
 	 			}
 	 		}
     	}
