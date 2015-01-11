@@ -60,22 +60,6 @@ window.onload = function() {
     });
 
 
-
-    $(".dot:nth-child(1)").click(function() {
-        $(".dot:nth-child(1)").addClass("active");
-         $(".dot").not(".dot:nth-child(1)").removeClass("active");
-    });
-     $(".dot:nth-child(2)").click(function() {
-        $(".dot:nth-child(2)").addClass("active");
-         $(".dot").not(".dot:nth-child(2)").removeClass("active");
-    });
-       $(".dot:nth-child(3)").click(function() {
-        $(".dot:nth-child(3)").addClass("active");
-         $(".dot").not(".dot:nth-child(3)").removeClass("active");
-    });
-
-
-
     $(window).resize(resize);
     resize();
 

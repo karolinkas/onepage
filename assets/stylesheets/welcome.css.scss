@@ -604,6 +604,7 @@ input:focus {
 				width: 270px;
 				height: 120px;
 				margin-left: -135px;
+				mix-blend-mode: multiply;
 	 		}
 	 		#dotContainer{
 	 			display: flex;
@@ -632,8 +633,19 @@ input:focus {
 	 				cursor: pointer;
 	 				// display: none;
 	 			}
-	 		}
-    	}
+
+ 		}
+ 			#IphoneMini{
+				background-image: url(../images/iphone-mini.png);
+				background-repeat: no-repeat;
+	 			background-size: 60%;
+	 			width: 300px;
+	 			height: 16px;
+	 			float: left;
+	 			margin-left: -300%;
+	 			margin-top: 20%;
+ 			}
+	}
 
     
     #GameView {

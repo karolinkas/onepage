@@ -445,7 +445,8 @@ input {
       background-size: cover;
       width: 270px;
       height: 120px;
-      margin-left: -135px; }
+      margin-left: -135px;
+      mix-blend-mode: multiply; }
     #ViewContainer #HowToPlayView #dotContainer {
       display: flex;
       margin-top: 30%;
@@ -468,6 +469,15 @@ input {
         width: 15px;
         height: 16px;
         cursor: pointer; }
+    #ViewContainer #HowToPlayView #IphoneMini {
+      background-image: url(../images/iphone-mini.png);
+      background-repeat: no-repeat;
+      background-size: 60%;
+      width: 300px;
+      height: 16px;
+      float: left;
+      margin-left: -300%;
+      margin-top: 20%; }
   #ViewContainer #GameView {
     width: 100%;
     height: 100%;

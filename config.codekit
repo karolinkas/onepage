@@ -79,6 +79,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/circle-fill.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 278,
+		"inputAbbreviatedPath": "\/assets\/images\/circle-fill.png",
+		"outputAbbreviatedPath": "\/assets\/images\/circle-fill.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/circle-stroke.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 374,
+		"inputAbbreviatedPath": "\/assets\/images\/circle-stroke.png",
+		"outputAbbreviatedPath": "\/assets\/images\/circle-stroke.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/como_jugar.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -196,6 +218,17 @@
 		"initialSize": 322,
 		"inputAbbreviatedPath": "\/assets\/images\/iphone-icon.png",
 		"outputAbbreviatedPath": "\/assets\/images\/iphone-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/iphone-mini.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 71060,
+		"inputAbbreviatedPath": "\/assets\/images\/iphone-mini.png",
+		"outputAbbreviatedPath": "\/assets\/images\/iphone-mini.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -376,12 +409,34 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/javascripts\/dots.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/javascripts\/dots.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/dots-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/javascripts\/jquery.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/javascripts\/jquery.min.js",
 		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/jquery.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/javascripts\/min\/dots-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/javascripts\/min\/dots-min.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/min\/dots-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -398,6 +453,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/javascripts\/min\/validations-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/javascripts\/min\/validations-min.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/min\/validations-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/javascripts\/navigation.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -409,16 +475,27 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/assets\/stylesheets\/gradient.png": {
-		"fileType": 32768,
+	"\/assets\/javascripts\/TweenMax.min.js": {
+		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 449,
-		"inputAbbreviatedPath": "\/assets\/stylesheets\/gradient.png",
-		"outputAbbreviatedPath": "\/assets\/stylesheets\/gradient.png",
+		"inputAbbreviatedPath": "\/assets\/javascripts\/TweenMax.min.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/TweenMax.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/javascripts\/validations.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/javascripts\/validations.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/validations-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
 		},
 	"\/assets\/stylesheets\/styles.css": {
 		"fileType": 16,
