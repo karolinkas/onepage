@@ -94,10 +94,32 @@
 	        <div class="PanelFooterContainer">
 		        <div class="backButton outlinePurpleButton">Volver</div>
 		        <div id="submitButton"class="okButton fillPurpleButton right">OK</div>
-		        
-		     
 	        </div>
 	      </div>
+
+		     <div id="ProfileView" class="view">
+		     	 <div class="panel">
+	         	<div class="panelBorder"> 
+	         	<div id="userIcon" class="left"></div>
+	         		<h1 id="UserName" class="left"> Dani Requena Arrabal </h1>
+	         		<div id="adressfield">
+		         		<div class="adress">Email: dani@20hungaros.com</div> 
+		         		<div class="adress">Direcci&oacute;n: C/Diputaci&oacute;n 203 Ent 1a</div> 
+		         		<div class="adress">Tlf: 670808197</div>
+		         		<div class="adress">Ciudad: Barcelona</div>
+		         		<div class="adress">CP: 08011</div>
+		         	</div>
+		         	<p class="heading2" class="left">Ranking de puntuaci&oacute;n:</p>
+		         	<p>1&#x00B0; Javier Rodríguez Povedra ................................................................................................150.250pts</p>
+							<p>2&#x00B0; Isabel Espona Serra ................................................................................................115.630pts</p>
+							<p>2&#x00B0; Nadal Vicente García ................................................................................................ 89.370pts</p>
+							<p>...</p>
+							<p>95&#x00B0; <span>TUS PUNTOS</span> </p>
+							<p class="right" id="totalPoints">32.050<span id="pts">pts</span></p>
+						</div>
+					</div>
+		     </div>
+
         <img src="assets/images/logo.png" alt="Logo" id="logo" />
         <img src="assets/images/logo-down.png" alt="Logo-down" id="logodown" />
 
@@ -165,17 +187,31 @@
         	<div id="HowToPlayTitle"> </div>
       		<div class="content">
       		</div>
-    			<div id="dotContainer"> 
-    				<div class="dot normal"></div>	   
-            <div class="dot normal"></div>	
-            <div class="dot normal"></div>	 			 
-    			</div>
+	    			<div id="dotContainer"> 
+	    				<div class="dot normal active"></div>	   
+	            <div class="dot normal"></div>	
+	            <div class="dot normal"></div>	 			 
+	    			</div>
     			<div id="slide1">
     				<div id="IphoneMini"></div>
+    				<h1 class ="slide-h1">Tomar el control nunca fue tan f&Aacute;cil</h1>
+    				<p class="slide-p centered">Sincroniza tu smartphone para utilizarlo como mando.</p>
+    				<div id="arrowBig"></div>
     			</div>
     			<div id="slide2">
+    				<h1 class ="slide-h1">Tomar el control nunca fue tan f&Aacute;cil</h1>
+    				<p class="slide-p centered">Presta atenci&oacute;n y responde las preguntas.</p>
+    				<p id="minitext" class="slide-p centered">Para poder disfrutar completamente de este concurso necesitas activar  el audio de tu dispositivo.</p>
+    				<div id="audioIcon"></div>
     			</div>
     			<div id="slide3">
+    				<h1 class ="slide-h1">Tomar el control nunca fue tan f&Aacute;cil</h1>
+    				<p class="slide-p centered">Utiliza cada uno de los comodines seg&uacute;n cada funcionalidad.</p>
+    				<div id="arrowContainer">
+							<div class="arrowDown"></div>	
+							<div class="arrowDown"></div>		
+							<div class="arrowDown"></div>	
+					</div>			
     			</div>
       	</div>
 
@@ -204,7 +240,7 @@
             <script type="text/javascript" src="assets/javascripts/validations.js"></script>
             <script src="assets/javascripts/jquery.min.js" type="text/javascript"></script>
             <script src="assets/javascripts/TweenMax.min.js" type="text/javascript"></script>
-            <script src="assets/javascripts/dots.js" type="text/javascript"></script>
+            
 </body>
 
 </html>

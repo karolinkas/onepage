@@ -60,7 +60,7 @@ function validate() {
         console.log("enter your bloque!");
         return false;
     }
-    if (cp=="") {
+    if (cp.length!=5) {
         console.log("enter your cp!");
         return false;
     }

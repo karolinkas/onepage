@@ -103,6 +103,20 @@ input {
   padding: 3em 6em;
   box-shadow: 0 0 1em grey; }
 
+.slide-h1 {
+  text-transform: uppercase;
+  color: white;
+  opacity: 1 !important;
+  width: 150px;
+  margin-left: -75px; }
+
+.slide-p {
+  color: white;
+  width: 300px;
+  margin-left: -150px;
+  opacity: 1 !important;
+  margin-top: 20px; }
+
 .view {
   position: absolute;
   left: -50%;
@@ -210,6 +224,44 @@ input {
       cursor: pointer; }
     #ViewContainer #HomeView img:nth-child(2) {
       width: 40%; }
+  #ViewContainer #ProfileView {
+    margin-left: -24%;
+    width: 48%; }
+    #ViewContainer #ProfileView #userIcon {
+      margin-top: 2%;
+      background-image: url(../images/loginButton.png);
+      background-repeat: no-repeat;
+      background-size: 660%;
+      border-radius: 5px;
+      width: 20px;
+      height: 20px;
+      background-position: -22px -7px; }
+    #ViewContainer #ProfileView #UserName {
+      margin-top: -13px;
+      margin-left: 33px; }
+    #ViewContainer #ProfileView .adress {
+      color: black;
+      opacity: 0.5;
+      font-size: 0.7em;
+      float: left;
+      width: 34%;
+      margin-top: 2%; }
+    #ViewContainer #ProfileView .adress:last-child {
+      margin-left: 34%; }
+    #ViewContainer #ProfileView #adressfield {
+      width: 100%;
+      height: 100px; }
+    #ViewContainer #ProfileView .heading2 {
+      font-weight: bold; }
+    #ViewContainer #ProfileView .heading2:last-child {
+      font-size: 0.8em; }
+    #ViewContainer #ProfileView #totalPoints {
+      font-size: 2em;
+      font-weight: bold;
+      opacity: 2 !important;
+      margin-top: -42px; }
+    #ViewContainer #ProfileView #pts {
+      font-size: 0.3em; }
   #ViewContainer #RegisterView {
     margin-left: -24%;
     width: 48%; }
@@ -445,8 +497,7 @@ input {
       background-size: cover;
       width: 270px;
       height: 120px;
-      margin-left: -135px;
-      mix-blend-mode: multiply; }
+      margin-left: -135px; }
     #ViewContainer #HowToPlayView #dotContainer {
       display: flex;
       margin-top: 30%;
@@ -472,12 +523,44 @@ input {
     #ViewContainer #HowToPlayView #IphoneMini {
       background-image: url(../images/iphone-mini.png);
       background-repeat: no-repeat;
-      background-size: 60%;
+      background-size: contain;
       width: 300px;
-      height: 16px;
+      height: 266px;
       float: left;
-      margin-left: -300%;
-      margin-top: 20%; }
+      margin-left: -156%;
+      margin-top: -10%; }
+    #ViewContainer #HowToPlayView #arrowBig {
+      background-image: url(../images/arrow-big.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 70px;
+      height: 50px;
+      float: left;
+      margin-left: -35px;
+      margin-top: 15%; }
+    #ViewContainer #HowToPlayView #minitext {
+      font-size: 0.5em;
+      opacity: 0.7 !important; }
+    #ViewContainer #HowToPlayView #audioIcon {
+      background-image: url(../images/audio-icon.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 70px;
+      height: 50px;
+      float: left;
+      margin-left: -35px;
+      margin-top: 15%; }
+    #ViewContainer #HowToPlayView #arrowContainer {
+      margin-left: -446px; }
+      #ViewContainer #HowToPlayView #arrowContainer .arrowDown {
+        background-image: url(../images/arrow-down.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 40px;
+        height: 50px;
+        float: left;
+        margin-left: 193px;
+        margin-top: 15%; }
   #ViewContainer #GameView {
     width: 100%;
     height: 100%;

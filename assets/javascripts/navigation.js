@@ -9,6 +9,9 @@ var PRIZE_VIEW;
 var CONNECT_VIEW;
 var AUDIO_VIEW;
 var HOWTOPLAY_VIEW;
+var PROFILE_VIEW
+
+
 
 window.onload = function() {
     HOME_VIEW = $("#HomeView");
@@ -19,15 +22,22 @@ window.onload = function() {
     LOSER_VIEW = $("#LoserView");
     PRIZE_VIEW = $("#PrizeView");
     CONNECT_VIEW = $("#ConnectView");
+    PROFILE_VIEW = $("#ProfileView");
     HOWTOPLAY_VIEW = $("#GameView").add($("#HowToPlayView"));
+    slide1 = $("#slide1");
+    slide2 = $("#slide2");
+    slide3 = $("#slide3");
     
-    var selectTV = $("#GameView").find($("#newTV"));
-    selectTV.append($(".content"));
+    slide2.hide();
+    slide3.hide();
+    
 
     currentView = HOME_VIEW;
     currentView.css({
         left: "50%"
     });
+    
+
 
     $("img:nth-child(1)").click(function() {
         nextView(HOWTOPLAY_VIEW)
@@ -58,7 +68,43 @@ window.onload = function() {
          alert("is valid!");       
    		} else {alert( "invalid" );}
     });
+    $(".puntosButton").click(function() {
+  			nextView(PROFILE_VIEW)
+    });
 
+
+    $(".dot:nth-child(1)").click(function() {
+    		slide2.hide();
+     		slide3.hide();
+     		slide1.show();
+        $(".dot:nth-child(1)").addClass("active");
+        $(".dot").not(".dot:nth-child(1)").removeClass("active");
+    });
+     $(".dot:nth-child(2)").click(function() {
+     		slide1.hide();
+     		slide2.show();
+     		slide3.hide();
+        $(".dot:nth-child(2)").addClass("active");
+        $(".dot").not(".dot:nth-child(2)").removeClass("active");
+    });
+       $(".dot:nth-child(3)").click(function() {
+       	slide2.hide();
+     		slide3.show();
+     		slide1.hide();
+        $(".dot:nth-child(3)").addClass("active");
+        $(".dot").not(".dot:nth-child(3)").removeClass("active");
+    });
+
+  
+    var selectTV = $("#GameView").find($("#newTV"));
+    selectTV.append($(".content"));
+
+   //  if( currentView===HOWTOPLAY_VIEW ){
+   // 	    var selectTV = $("#GameView").find($("#newTV"));
+   //  		selectTV.append($(".content"));
+  	// } else {
+  		// selectTV.removeChild($(".content"));
+  	// }
 
     $(window).resize(resize);
     resize();
@@ -79,6 +125,11 @@ function resize() {
 
     y = (h - PRIZE_VIEW.height()) * .5;
     PRIZE_VIEW.css({
+        top: y
+    });
+
+    y = (h - PRIZE_VIEW.height()) * .5;
+    PROFILE_VIEW.css({
         top: y
     });
 }
@@ -106,4 +157,6 @@ function nextView(view) {
     });
 
 }
+
+
 
