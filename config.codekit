@@ -2,6 +2,257 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "18027",
 "files": {
+	"\/assets\/css\/styles.css.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/css\/styles.css.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/game\/img\/call.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26657,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/call.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/call.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/controller.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 90876,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/controller.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/controller.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/counter\/1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5779,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/counter\/1.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/counter\/1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/counter\/2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8572,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/counter\/2.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/counter\/2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/counter\/3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10174,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/counter\/3.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/counter\/3.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/counter\/4.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10531,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/counter\/4.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/counter\/4.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/counter\/5.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12399,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/counter\/5.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/counter\/5.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/counter\/6.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13761,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/counter\/6.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/counter\/6.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/counter\/7.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 13904,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/counter\/7.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/counter\/7.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/feature_button_middle.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9032,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/feature_button_middle.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/feature_button_middle.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/feature_button_middle_active.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28116,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/feature_button_middle_active.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/feature_button_middle_active.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/feature_button_side.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9860,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/feature_button_side.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/feature_button_side.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/feature_button_side_active.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28371,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/feature_button_side_active.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/feature_button_side_active.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/ono_small.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2535,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/ono_small.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/ono_small.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/right_arrow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 975,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/right_arrow.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/right_arrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/round_counter_bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5123,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/round_counter_bg.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/round_counter_bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/screen.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 127735,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/screen.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/screen.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/tivo\/01_menu_bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 259457,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/tivo\/01_menu_bg.jpg",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/tivo\/01_menu_bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/tivo\/01_menu_front.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17582,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/tivo\/01_menu_front.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/tivo\/01_menu_front.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/tivo\/01_menu_right_bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 38919,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/tivo\/01_menu_right_bg.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/tivo\/01_menu_right_bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/tivo\/01_menu_right_front.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23594,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/tivo\/01_menu_right_front.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/tivo\/01_menu_right_front.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/game\/img\/tivo\/01_menu_select.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14383,
+		"inputAbbreviatedPath": "\/assets\/game\/img\/tivo\/01_menu_select.png",
+		"outputAbbreviatedPath": "\/assets\/game\/img\/tivo\/01_menu_select.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/arrow-big.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -442,6 +693,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/javascripts\/game\/FeatureBase.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/javascripts\/game\/FeatureBase.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/game\/min\/FeatureBase-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/javascripts\/game\/FeatureControl.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/javascripts\/game\/FeatureControl.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/game\/min\/FeatureControl-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/javascripts\/game\/FeatureSearch.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/javascripts\/game\/FeatureSearch.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/game\/min\/FeatureSearch-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/javascripts\/game\/game.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/javascripts\/game\/game.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/game\/min\/game-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/javascripts\/jquery.min.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -475,6 +770,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/javascripts\/min\/transferData-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/javascripts\/min\/transferData-min.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/min\/transferData-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/assets\/javascripts\/min\/validations-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -492,6 +798,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/javascripts\/navigation.js",
 		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/navigation-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/assets\/javascripts\/transferData.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/javascripts\/transferData.js",
+		"outputAbbreviatedPath": "\/assets\/javascripts\/min\/transferData-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -519,6 +836,15 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/assets\/stylesheets\/game.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/stylesheets\/game.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/assets\/stylesheets\/styles.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -528,14 +854,23 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/assets\/stylesheets\/welcome.css.scss": {
+	"\/assets\/stylesheets\/styles.css.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/stylesheets\/styles.css.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/assets\/stylesheets\/styles.css.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
 		"decimalPrecision": 10,
 		"fileType": 4,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/assets\/stylesheets\/welcome.css.scss",
+		"inputAbbreviatedPath": "\/assets\/stylesheets\/styles.css.scss",
 		"outputAbbreviatedPath": "\/assets\/stylesheets\/styles.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
@@ -544,11 +879,41 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/assets\/stylesheets\/styles_archive.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/stylesheets\/styles_archive.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/README.md": {
+		"enableFootnoteSupport": 0,
+		"enableSmartyPants": 1,
+		"expandTabs": 1,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"outputAbbreviatedPath": "\/README.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/styles.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/styles.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -562,7 +927,7 @@
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "frontendonly",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "pencil_gray"
 	},
 "projectSettings": {

@@ -2,6 +2,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/styles.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/game.css">
 </head>
 
 <body>
@@ -35,14 +36,14 @@
 		            <p class="left"> Si ya has participado otras veces introduce tu usuario y sigue jugando.</p>
 		          	<div id="loginFormContainer">
 			            <div>
-				            <form action="login" method="post" id="LoginForm">
-				                <input type="email" name="Email" placeholder="Email" />
-				                <input type="password" name="Password" placeholder="Contrase&ntilde;a" />
+				            <form action="login" method="post" id="LoginForm" name="LoginForm">
+				                <input type="email" name="emailLogin" placeholder="Email" />
+				                <input type="password" name="passwordLogin" placeholder="Contrase&ntilde;a" />
 				            </form>
 				          </div>
-			           	<div class="okButton fillPurpleButton right">OK</div>
+			           	<div id="SubmitLogin"class="okButton fillPurpleButton right">OK</div>
 			          </div>
-		            <a id="PasswordForgotten">He olvidado mi contrase&ntilde;a</a>
+		            <a href=javascript:requestPassword(); id="PasswordForgotten"> He olvidado mi contrase&ntilde;a </a>
 		            
 		            <div id="LoginRegisterContainer">
 		            <div id = "RegisterButton" class="fillPurpleButton right"></div>
@@ -73,14 +74,14 @@
 	                <input type="password" name="password" placeholder="Contrase&ntilde;a"/>
 	                <input type="text" name="lastName" placeholder="Appellidos"/>
 	                <div id="addressContainer">
-		                <input type="number" name="bloque" placeholder="Bloque" />
+		                <input type="number" name="block" placeholder="Bloque" />
 		                <input type="text" name="esc" placeholder="Esc" />
-		                <input type="number" name="piso" placeholder="Piso" />
-		                <input type="number" name="puerta" placeholder="Puerta" />
+		                <input type="number" name="floor" placeholder="Piso" />
+		                <input type="number" name="door" placeholder="Puerta" />
 	                </div>
 	                <div id="telContainer">
-		                <input type="text" name="cp" placeholder="CP" />
-		                <input type="tel" name="telefono" placeholder="Tel&eacute;fono" />
+		                <input type="text" name="zip" placeholder="CP" />
+		                <input type="tel" name="phone" placeholder="Tel&eacute;fono" />
 	               	</div>
 	               </div>
 	            </form>
@@ -103,20 +104,24 @@
 	         	<div id="userIcon" class="left"></div>
 	         		<h1 id="UserName" class="left"> Dani Requena Arrabal </h1>
 	         		<div id="adressfield">
-		         		<div class="adress">Email: dani@20hungaros.com</div> 
-		         		<div class="adress">Direcci&oacute;n: C/Diputaci&oacute;n 203 Ent 1a</div> 
-		         		<div class="adress">Tlf: 670808197</div>
-		         		<div class="adress">Ciudad: Barcelona</div>
-		         		<div class="adress">CP: 08011</div>
+		         		<div class="adress"><strong>Email:</strong> dani@20hungaros.com</div> 
+		         		<div class="adress"><strong>Direcci&oacute;n:</strong> C/Diputaci&oacute;n 203 Ent 1a</div> 
+		         		<div class="adress"><strong>Tlf:</strong> 670808197</div>
+		         		<div class="adress"><strong>Ciudad:</strong> Barcelona</div>
+		         		<div class="adress"><strong>CP:</strong> 08011</div>
 		         	</div>
 		         	<p class="heading2" class="left">Ranking de puntuaci&oacute;n:</p>
-		         	<p>1&#x00B0; Javier Rodríguez Povedra ................................................................................................150.250pts</p>
-							<p>2&#x00B0; Isabel Espona Serra ................................................................................................115.630pts</p>
-							<p>2&#x00B0; Nadal Vicente García ................................................................................................ 89.370pts</p>
+		         	<p>1&#x00B0; Javier Rodríguez Povedra <div class="userPoints">150.250pts</div></p>
+							<p>2&#x00B0; Isabel Espona Serra <div class="userPoints">115.630pts</div></p>
+							<p>2&#x00B0; Nadal Vicente García <div class="userPoints">89.370pts</div></p>
 							<p>...</p>
-							<p>95&#x00B0; <span>TUS PUNTOS</span> </p>
+							<p id="yourRanking">95&#x00B0; <span>TUS PUNTOS</span> </p>
 							<p class="right" id="totalPoints">32.050<span id="pts">pts</span></p>
 						</div>
+					</div>
+					<div class="PanelFooterContainer">
+						<div class="backButton outlinePurpleButton">Volver</div>
+						<div class="jugarButton fillWhiteButton center">Jugar</div>
 					</div>
 		     </div>
 
@@ -183,64 +188,109 @@
         	</div>
         </div>
 
-        <div id="HowToPlayView" class="view">
-        	<div id="HowToPlayTitle"> </div>
-      		<div class="content">
-      		</div>
-	    			<div id="dotContainer"> 
-	    				<div class="dot normal active"></div>	   
-	            <div class="dot normal"></div>	
-	            <div class="dot normal"></div>	 			 
-	    			</div>
-    			<div id="slide1">
-    				<div id="IphoneMini"></div>
-    				<h1 class ="slide-h1">Tomar el control nunca fue tan f&Aacute;cil</h1>
-    				<p class="slide-p centered">Sincroniza tu smartphone para utilizarlo como mando.</p>
-    				<div id="arrowBig"></div>
-    			</div>
-    			<div id="slide2">
-    				<h1 class ="slide-h1">Tomar el control nunca fue tan f&Aacute;cil</h1>
-    				<p class="slide-p centered">Presta atenci&oacute;n y responde las preguntas.</p>
-    				<p id="minitext" class="slide-p centered">Para poder disfrutar completamente de este concurso necesitas activar  el audio de tu dispositivo.</p>
-    				<div id="audioIcon"></div>
-    			</div>
-    			<div id="slide3">
-    				<h1 class ="slide-h1">Tomar el control nunca fue tan f&Aacute;cil</h1>
-    				<p class="slide-p centered">Utiliza cada uno de los comodines seg&uacute;n cada funcionalidad.</p>
-    				<div id="arrowContainer">
-							<div class="arrowDown"></div>	
-							<div class="arrowDown"></div>		
-							<div class="arrowDown"></div>	
-					</div>			
-    			</div>
-      	</div>
-
+        <div id="AudioView" class="view">
+        	<div class="panel">
+	         	<div class="panelBorder">
+	         			<p class="centered">Para poder disfrutar completamente de este concurso necesitas activar  el audio de tu dispositivo.</p>
+	         		</div>
+	         	</div> 
+		        <div class="PanelFooterContainer">
+		        	<div class="continueButton fillPurpleButton"></div>
+	        	</div>
+	        </div>
+	      
 
 
         <div id="GameView" class="view">
-        		<div id="newTV"></div>
-            <img src="assets/images/tableAndStuff.png" alt="Logo-down" id="tablestuff" />
+    		<div id="HowToPlayTitle" class="HowToPlay"></div>
+    		<div id="HowToPlayPhone" class="HowToPlay"></div>
+    		<div id="ScreenContainer">
+	            <div id="ScreenBorder"></div>
+	            <div id="GameLoading">
+	                <p>...CARGANDO PRUEBA...</p>
+	            </div>
+	            <div id="GameFinish">
+	                <div id="RoundCounter">
+	                    <img id="RoundCounterBg" src="assets/game/img/round_counter_bg.png">
+	                    <div id="RoundCounterSlice"></div>
+	                    <div id="RoundCounterTxt">5</div>
+	                </div>
+	                <p id="GameFinishTxt">¡Felicidades!</p>
+	                <div id="PointContainer"><span id="ScoreTxt">32.540</span><span> pts</span></div>
+	                <div id="GameNextBtn">Siguiente</div>
+	            </div>
+	            <div id="ScreenContentContainer"></div>
 
-            <div id="ButtonContainer">
-                <div class="featureButton">
-                    <div class="normal"></div>
-                    <div class="active"></div>
-                </div>
-                <div class="featureButton">
-                    <div class="normal"></div>
-                    <div class="active"></div>
-                </div>
-                <div class="featureButton">
-                    <div class="normal"></div>
-                    <div class="active"></div>
-                </div>
-            </div>
+	            <div id="HowToPlayContent" class="HowToPlay">
+    				<div id="dotContainer"> 
+		    				<div class="dot active"></div>	   
+		            <div class="dot"></div>	
+		            <div class="dot"></div>	 			 
+		    			</div>
+		    			<div id="slide1" class="slide">
+		    				<h1>Tomar el control nunca fue tan f&Aacute;cil</h1>
+		    				<p class="centered">Sincroniza tu smartphone para utilizarlo como mando.</p>
+		    				<div id="arrowBig"></div>
+		    			</div>
+		    			<div id="slide2" class="slide">
+		    				<h1>Tomar el control nunca fue tan f&Aacute;cil</h1>
+		    				<p class="centered">Presta atenci&oacute;n y responde las preguntas.</p>
+		    				<p id="minitext" class="slide-p centered">Para poder disfrutar completamente de este concurso necesitas activar  el audio de tu dispositivo.</p>
+		    				<div id="audioIcon"></div>
+		    			</div>
+		    			<div id="slide3" class="slide">
+		    				<h1>Tomar el control nunca fue tan f&Aacute;cil</h1>
+		    				<p class="centered">Utiliza cada uno de los comodines seg&uacute;n cada funcionalidad.</p>
+		    				<div id="arrowContainer">
+									<div class="arrowDown"></div>	
+									<div class="arrowDown"></div>		
+									<div class="arrowDown"></div>	
+								</div>			
+		    			</div>
+    			</div>
+	        </div>
+        		
+        	<div id="TimerContainer"><span id="TimerTxt">30</span><div id="TimerLine"></div></div>
+	        <div id="ControllerContainer">
+	            <div id="ControlOk" class="ControlBtn"></div><div id="ControlL" class="ControlBtn"></div><div id="ControlR" class="ControlBtn"></div><div id="ControlU" class="ControlBtn"></div><div id="ControlD" class="ControlBtn"></div>
+	        </div>
+
+	        <div id="ButtonContainer">
+	            <div class="featureButton">
+	                <div class="normal"></div>
+	                <div class="active"></div>
+	                <div class="featureName"></div>
+	            </div>
+	            <div class="featureButton">
+	                <div class="normal"></div>
+	                <div class="active"></div>
+	                <div class="featureName"></div>
+	            </div>
+	            <div class="featureButton">
+	                <div class="normal"></div>
+	                <div class="active"></div>
+	                <div class="featureName"></div>
+	            </div>
+	        </div>
+	        <div id="IncomingCall"><img src="assets/game/img/call.png"></div>
+   
+            <img src="assets/images/tableAndStuff.png" alt="Logo-down" id="tablestuff" />
         </div>
-            <script type="text/javascript" src="assets/javascripts/navigation.js"></script>
-            <script type="text/javascript" src="assets/javascripts/validations.js"></script>
-            <script src="assets/javascripts/jquery.min.js" type="text/javascript"></script>
-            <script src="assets/javascripts/TweenMax.min.js" type="text/javascript"></script>
-            
+        
+        <script src="assets/javascripts/TweenMax.min.js" type="text/javascript"></script>
+        <script src="https://code.createjs.com/createjs-2014.12.12.min.js"></script>
+        <script src="assets/javascripts/jquery.min.js" type="text/javascript"></script>
+        
+        <script type="text/javascript" src="assets/javascripts/navigation.js"></script>
+        <script type="text/javascript" src="assets/javascripts/validations.js"></script>
+        <script type="text/javascript" src="assets/javascripts/transferData.js"></script>
+
+        <script src="assets/javascripts/game/FeatureBase.js"></script>
+        <script src="assets/javascripts/game/FeatureSearch.js"></script>
+        <script src="assets/javascripts/game/FeatureControl.js"></script>
+        <script src="assets/javascripts/game/game.js"></script> 
+        <script src="assets/javascripts/game/game.js"></script>   
+
 </body>
 
 </html>

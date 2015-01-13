@@ -1,79 +1,116 @@
-var Name = document.RegisterForm.Name.value;
-var lastName = document.RegisterForm.lastName.value;
-var email = document.RegisterForm.email.value;
-var password = document.RegisterForm.password.value;
-var city = document.RegisterForm.city.value;
-var directions = document.RegisterForm.directions.value;
-var bloque = document.RegisterForm.bloque.value;
-var piso = document.RegisterForm.piso.value;
-var esc = document.RegisterForm.esc.value;
-var puerta = document.RegisterForm.puerta.value;
-var cp = document.RegisterForm.cp.value;
-var telefono = document.RegisterForm.telefono.value;
-
-
 function validate() {
-    if (Name == "") {
+
+    var name = document.RegisterForm.Name;
+    var lastName = document.RegisterForm.lastName;
+    var email = document.RegisterForm.email;
+    var password = document.RegisterForm.password;
+    var city = document.RegisterForm.city;
+    var directions = document.RegisterForm.directions;
+    var block = document.RegisterForm.block;
+    var floor = document.RegisterForm.floor;
+    var esc = document.RegisterForm.esc;
+    var door = document.RegisterForm.door;
+    var zip = document.RegisterForm.zip;
+    var phone = document.RegisterForm.phone;
+    var emailLogin = document.LoginForm.emailLogin;
+    var passwordLogin = document.LoginForm.passwordLogin;
+
+    $("#RegisterView input").removeClass("error");
+  
+    var val = true;
+    if (name.value == "") {
         console.log("Please provide your name!");
-        document.RegisterForm.lastName.focus();
-        return false;
+        name.className += 'error';
+        
+        val = false;
     }
-    if (validateEmail(email)) {
+    if ( !validateEmail(email.value) ) {
         console.log("Please provide a valid Email!");
-        document.RegisterForm.email.focus();
-        return false;
+        email.className += 'error';
+        
+        val = false;
     }
-    if (isNaN(piso)) {
+    if ( !validateEmail(emailLogin.value) ) {
+        console.log("Please provide a valid Email!");
+        emailLogin.className += 'error';
+        
+        val = false;
+    }
+    if (floor.value == "") {
         console.log("Please provide a piso number.");
-        document.RegisterForm.piso.focus();
-        return false;
+        floor.className += 'error';
+        
+        val = false;
     }
-    if (isNaN(puerta)) {
+    if (door.value == "") {
         console.log("Please provide a puerta number.");
-        document.RegisterForm.puerta.focus();
-        return false;
+        door.className += 'error';
+        
+        val = false;
     }
-    if (password.length!=8) {
+    if (password.value.length < 4) {
         console.log("enter a valid password!");
-        return false;
+        password.className += 'error'; 
+        
+        val = false;
+    }
+    if (passwordLogin.value.length < 4) {
+        console.log("enter a valid password!");
+        passwordLogin.className += 'error'; 
+        
+        val = false;
     }
 
-    if (telefono.length!=9) {
+    if (phone.value.length!=9) {
         console.log("enter a valid telefono!");
-        return false;
+        phone.className += 'error';
+        
+        val = false;
     }
 
-    if (lastName=="") {
+    if (lastName.value=="") {
         console.log("enter your last name!");
-        return false;
+        lastName.className += 'error';
+        
+        val = false;
     }
-    if (city=="") {
+    if (city.value=="") {
         console.log("enter your city!");
-        return false;
+        city.className += 'error';
+        
+        val = false;
     }
 
-    if (directions=="") {
+    if (directions.value=="") {
         console.log("enter your directions!");
-        return false;
+        directions.className += 'error';
+        
+        val = false;
     }
-    if (bloque=="") {
+    if (block.value=="") {
+        block.className += 'error';
+        
         console.log("enter your bloque!");
-        return false;
+        val = false;
     }
-    if (cp.length!=5) {
+    if (zip.value.length!=5) {
+        zip.className += 'error';
+        
         console.log("enter your cp!");
-        return false;
+        val = false;
     }
-    if (esc=="") {
+    if (esc.value=="") {
+        esc.className += 'error';
+        
         console.log("enter your esc!");
-        return false;
+        val = false;
     }
 
-    return (true);
+    return val;
 }
 
 function validateEmail(email) {
 
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var re = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return re.test(email);
 }

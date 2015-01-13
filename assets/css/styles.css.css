@@ -1,0 +1,597 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet Ms"; }
+
+::-webkit-input-placeholder {
+  font-family: "Trebuchet Ms"; }
+
+::-moz-placeholder {
+  font-family: "Trebuchet Ms"; }
+
+:-ms-input-placeholder {
+  font-family: "Trebuchet Ms"; }
+
+input:-moz-placeholder {
+  font-family: "Trebuchet Ms"; }
+
+h1 {
+  color: #7d187b;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  opacity: 0.8; }
+
+a {
+  text-decoration: underline;
+  color: #7d187b;
+  font-size: 0.8em;
+  opacity: 0.8; }
+
+p {
+  color: #7d187b;
+  font-size: 0.7em;
+  opacity: 0.8; }
+
+input {
+  width: 100%;
+  color: #7d187b;
+  font-size: 0.6em;
+  padding: 0.8em 0.6em 0.8em 0.5em;
+  border: 0;
+  border: none; }
+
+input:focus {
+  box-shadow: 0 0 1em tomato; }
+
+.right {
+  float: right !important; }
+
+.centered {
+  text-align: center;
+  width: 100%; }
+
+.left {
+  text-align: left;
+  width: 100%; }
+
+.rightAlign {
+  text-align: right;
+  width: 100%; }
+
+.outlinePurpleButton {
+  border: 1px solid #6d1f80;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0.3em 0.6em;
+  float: left;
+  font-size: 0.7em;
+  color: #6d1f80;
+  box-shadow: 0 0 1em grey; }
+
+.fillWhiteButton {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 1em grey;
+  padding: 7 0.3em;
+  box-shadow: 2px 2px 10px #525252;
+  color: #7d187b; }
+
+.fillPurpleButton {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #6d1f80;
+  background-repeat: no-repeat;
+  padding: 1.0em 1.6em;
+  color: white;
+  font-size: 0.6em; }
+
+.backButton {
+  background-image: url(../images/arrow.png);
+  background-size: 9%;
+  padding: 0.6em 2.0em;
+  background-position: 9.5px 9.7px;
+  background-repeat: no-repeat; }
+
+.purplebox {
+  background: linear-gradient(137deg, #b9009c 0%, #54297A 100%) 15%;
+  width: 100%;
+  height: 100%;
+  border-radius: 5;
+  padding: 3em 6em;
+  box-shadow: 0 0 1em grey; }
+
+.view {
+  position: absolute;
+  left: -50%;
+  top: 0; }
+
+.panel {
+  background-color: rgba(229, 224, 232, 0.3);
+  box-shadow: 0 0 1em grey;
+  padding: 0.4em;
+  box-sizing: border-box;
+  border-radius: 10;
+  width: 100%;
+  height: 100%; }
+
+.panelBorder {
+  width: 100%;
+  height: 100%;
+  border: 3px solid #b9009c;
+  box-sizing: border-box;
+  padding: 1em 2em 1em 2em;
+  overflow: hidden;
+  border-radius: 5;
+  box-shadow: 0 0 1em rgba(185, 0, 156, 0.2), inset 0 0 2em rgba(255, 255, 255, 0.4); }
+
+.panelFooterContainer {
+  margin-top: 1em;
+  width: 100%; }
+
+.content {
+  background: linear-gradient(36deg, #6a1f7b 0%, #a02dbb 100%) 15%;
+  box-shadow: inset 0 0 2em rgba(0, 0, 0, 0.5);
+  width: 94%;
+  height: 92%;
+  margin: 1% 1% 1% 3.5%; }
+
+#ViewContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  min-height: 600px;
+  overflow: hidden; }
+  #ViewContainer .backgroundimage {
+    height: 100%;
+    width: 100%; }
+    #ViewContainer .backgroundimage div {
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center; }
+    #ViewContainer .backgroundimage #background-top {
+      width: 100%;
+      height: 60px;
+      background-image: url(../images/background-up.png); }
+    #ViewContainer .backgroundimage #background-middle {
+      top: 60px;
+      width: 100%;
+      height: 90%;
+      background-image: url(../images/background-middle.jpg); }
+    #ViewContainer .backgroundimage #background-bottom {
+      width: 100%;
+      height: 100px;
+      bottom: 0;
+      background-image: url(../images/background-bottom.png); }
+  #ViewContainer #logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 20%;
+    height: auto;
+    z-index: 1000;
+    cursor: pointer; }
+  #ViewContainer #logodown {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 20%;
+    height: auto;
+    z-index: 5030; }
+  #ViewContainer #LoginButtonContainer {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 10000; }
+    #ViewContainer #LoginButtonContainer img {
+      width: 75%; }
+    #ViewContainer #LoginButtonContainer p {
+      color: white;
+      position: absolute;
+      top: 9px;
+      left: 70px; }
+  #ViewContainer #HomeView {
+    width: 60%;
+    height: 50%;
+    z-index: 2000;
+    margin-left: -30%;
+    overflow-x: scroll;
+    overflow-y: none;
+    white-space: nowrap;
+    top: 25%; }
+    #ViewContainer #HomeView img {
+      float: left;
+      display: inline-block;
+      width: 30%;
+      cursor: pointer; }
+    #ViewContainer #HomeView img:nth-child(2) {
+      width: 40%; }
+  #ViewContainer #ProfileView {
+    margin-left: -24%;
+    width: 48%; }
+    #ViewContainer #ProfileView #userIcon {
+      margin-top: 2%;
+      background-image: url(../images/loginButton.png);
+      background-repeat: no-repeat;
+      background-size: 660%;
+      border-radius: 5px;
+      width: 20px;
+      height: 20px;
+      background-position: -22px -7px; }
+    #ViewContainer #ProfileView #UserName {
+      margin-top: -13px;
+      margin-left: 33px; }
+    #ViewContainer #ProfileView .adress {
+      color: black;
+      opacity: 0.5;
+      font-size: 0.7em;
+      float: left;
+      width: 34%;
+      margin-top: 2%; }
+    #ViewContainer #ProfileView .adress:last-child {
+      margin-left: 34%; }
+    #ViewContainer #ProfileView #adressfield {
+      width: 100%;
+      height: 100px; }
+    #ViewContainer #ProfileView .heading2 {
+      font-weight: bold; }
+    #ViewContainer #ProfileView .heading2:last-child {
+      font-size: 0.8em; }
+    #ViewContainer #ProfileView #totalPoints {
+      font-size: 2em;
+      font-weight: bold;
+      opacity: 2 !important;
+      margin-top: -42px; }
+    #ViewContainer #ProfileView #pts {
+      font-size: 0.3em; }
+    #ViewContainer #ProfileView .panelFooterContainer .jugarButton {
+      width: 9%;
+      float: right;
+      font-size: 0.7em;
+      height: 40%;
+      padding: 0.6em 0.0em 0.6em 2.2em; }
+  #ViewContainer #RegisterView {
+    margin-left: -24%;
+    width: 48%; }
+    #ViewContainer #RegisterView form {
+      width: 100%;
+      float: left; }
+    #ViewContainer #RegisterView form .halfContainer {
+      float: left;
+      width: 48%; }
+    #ViewContainer #RegisterView .halfContainer:last-child {
+      margin-left: 4%; }
+    #ViewContainer #RegisterView form input {
+      float: left;
+      width: 100%;
+      margin-top: 0.6em;
+      font-size: 0.6em;
+      background-color: tomato !important; }
+    #ViewContainer #RegisterView form input:focus {
+      float: left;
+      width: 100%;
+      margin-top: 0.6em;
+      font-size: 0.6em; }
+    #ViewContainer #RegisterView #addressContainer, #ViewContainer #RegisterView #telContainer {
+      width: 100%; }
+    #ViewContainer #RegisterView #addressContainer input {
+      width: 23.5%;
+      margin-right: 2%; }
+    #ViewContainer #RegisterView #addressContainer input:last-child {
+      margin-right: 0; }
+    #ViewContainer #RegisterView #telContainer input {
+      width: 49%;
+      margin-right: 2%; }
+    #ViewContainer #RegisterView #telContainer input:last-child {
+      margin-right: 0; }
+    #ViewContainer #RegisterView div#codeinput {
+      float: left;
+      width: 100%;
+      background-color: #7d187b;
+      border-radius: 5; }
+      #ViewContainer #RegisterView div#codeinput p {
+        color: white;
+        width: 45%;
+        float: left;
+        text-align: left;
+        font-size: 0.6em;
+        margin-left: 3%;
+        opacity: 0.9 !important; }
+      #ViewContainer #RegisterView div#codeinput input {
+        width: 44.6%;
+        margin-right: 3%;
+        padding: 0.5em 0.7em;
+        margin-bottom: 0.6em;
+        margin-top: 0.6em;
+        font-size: 0.9em;
+        float: right;
+        letter-spacing: 0.2em;
+        text-align: center; }
+    #ViewContainer #RegisterView #accept {
+      float: right;
+      margin-top: 0.5em;
+      color: #7d187b;
+      font-size: 0.6em; }
+      #ViewContainer #RegisterView #accept .underline {
+        text-decoration: underline; }
+      #ViewContainer #RegisterView #accept input {
+        width: auto; }
+    #ViewContainer #RegisterView .okButton {
+      box-shadow: 0 0 1em grey; }
+  #ViewContainer #WinnerView {
+    width: 30%;
+    margin-left: -15%; }
+    #ViewContainer #WinnerView .purplebox h1 {
+      color: white;
+      opacity: 0.9 !important;
+      font-size: 1.1em; }
+    #ViewContainer #WinnerView .purplebox p {
+      color: white;
+      opacity: 0.9 !important;
+      line-height: 1.5; }
+    #ViewContainer #WinnerView .purplebox .fillWhiteButton {
+      width: 20%;
+      text-align: center;
+      margin-top: 8%;
+      margin-left: 40%; }
+  #ViewContainer #LoserView {
+    width: 30%;
+    margin-left: -15%; }
+    #ViewContainer #LoserView .purplebox {
+      background: linear-gradient(137deg, #867fd3 0%, #716da6 50%, #524d86 100%) 15% !important; }
+      #ViewContainer #LoserView .purplebox h1 {
+        color: white;
+        opacity: 0.9 !important;
+        font-size: 1.1em; }
+      #ViewContainer #LoserView .purplebox p {
+        color: white;
+        opacity: 0.9 !important;
+        line-height: 1.5; }
+      #ViewContainer #LoserView .purplebox .fillWhiteButton {
+        width: 20%;
+        text-align: center;
+        margin-top: 8%;
+        margin-left: 39%;
+        color: #716da6;
+        font-size: 0.8em; }
+  #ViewContainer #PrizeView {
+    width: 38%;
+    min-width: 520px;
+    margin-left: -19%; }
+    #ViewContainer #PrizeView .panelBorder {
+      padding-left: 0em !important; }
+      #ViewContainer #PrizeView .panelBorder #IconAndText {
+        background-image: url(../images/price.png);
+        background-repeat: no-repeat;
+        background-size: 6em 7em;
+        background-position: -1em -1em;
+        min-height: 200px;
+        float: left;
+        width: 50%;
+        margin-top: 40px; }
+        #ViewContainer #PrizeView .panelBorder #IconAndText h1 {
+          margin-left: 70px; }
+        #ViewContainer #PrizeView .panelBorder #IconAndText p {
+          margin-left: 70px;
+          width: 220px; }
+      #ViewContainer #PrizeView .panelBorder #Image {
+        background-image: url(../images/prize-tv.png);
+        background-repeat: no-repeat;
+        height: 200px;
+        background-size: 170px;
+        position: relative;
+        left: 64%;
+        margin-top: 19px;
+        margin-left: 15px;
+        padding-left: 25px;
+        padding-right: 25px; }
+    #ViewContainer #PrizeView .puntosButton {
+      width: 53px;
+      height: 10%;
+      margin-left: 84.5%;
+      font-size: 0.7em;
+      opacity: 0.9;
+      padding: 0.7em 1.5em 0.8em 1.5em;
+      box-shadow: 0 0 1em grey; }
+  #ViewContainer #ConnectView {
+    height: 310px;
+    width: 500px;
+    margin-left: -250px; }
+    #ViewContainer #ConnectView #IphoneIcon {
+      background-image: url(../images/iphone-icon.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 500px;
+      height: 25px;
+      position: relative;
+      left: 50%;
+      margin-top: 20px; }
+    #ViewContainer #ConnectView #Iphone {
+      background-image: url(../images/iphone.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 300px;
+      height: 139px;
+      position: absolute;
+      left: 50%;
+      margin-left: -150px;
+      bottom: 0; }
+      #ViewContainer #ConnectView #Iphone #ShowUrl {
+        position: relative;
+        top: 83px;
+        font-size: 0.7em;
+        left: 48px;
+        opacity: 0.6;
+        width: 170px; }
+    #ViewContainer #ConnectView .noPhoneButton {
+      width: 25%;
+      box-shadow: 0 0 1em grey;
+      padding: 0.5em 0.5em 0.6em 0.7em; }
+    #ViewContainer #ConnectView .continueButton {
+      width: 2%;
+      background-image: url(../images/arrow-white.png);
+      background-size: 18%;
+      background-position: 14px 9px;
+      margin-left: 85%;
+      box-shadow: 0 0 1em grey;
+      float: right;
+      padding: 1.4em;
+      margin-top: -23px;
+      float: right;
+      margin-top: -28px; }
+  #ViewContainer #LoginView {
+    width: 42%;
+    margin-left: -21%; }
+    #ViewContainer #LoginView p#intro {
+      width: 100%;
+      text-align: center; }
+    #ViewContainer #LoginView #loginContentContainer {
+      width: 70%;
+      margin-left: 15%;
+      position: relative; }
+    #ViewContainer #LoginView #loginFormContainer {
+      height: 60px;
+      width: 100%;
+      position: relative;
+      margin-bottom: 1em; }
+    #ViewContainer #LoginView #loginFormContainer div {
+      float: left;
+      position: absolute;
+      bottom: 0; }
+    #ViewContainer #LoginView #loginFormContainer > div:first-child {
+      width: 82%; }
+    #ViewContainer #LoginView .okButton {
+      position: absolute;
+      bottom: 0;
+      right: -1px; }
+    #ViewContainer #LoginView form {
+      margin-bottom: 0; }
+    #ViewContainer #LoginView input:nth-child(2) {
+      margin-top: 0.7em; }
+    #ViewContainer #LoginView #PasswordForgotten {
+      text-decoration: underline;
+      color: #7d187b;
+      font-size: 60%;
+      cursor: pointer; }
+    #ViewContainer #LoginView #LoginRegisterContainer {
+      margin-top: 2.5em; }
+    #ViewContainer #LoginView #RegisterButton {
+      background-image: url(../images/register-icon.png);
+      background-size: 75%;
+      padding: 1.5em 2.1em;
+      background-position: 3.4px 0.5em; }
+    #ViewContainer #LoginView #RegisterNow {
+      max-width: 70%;
+      float: right;
+      margin-top: 0;
+      margin-right: 3%; }
+  #ViewContainer #HowToPlayTitle {
+    background-image: url(../images/como_jugar_title.png);
+    background-size: cover;
+    width: 270px;
+    height: 120px;
+    margin-left: -135px;
+    position: absolute;
+    display: none;
+    left: 50%; }
+  #ViewContainer #HowToPlayPhone {
+    background-image: url(../images/iphone-mini.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 266px;
+    display: none;
+    position: absolute; }
+  #ViewContainer #HowToPlayContent {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #7d187b;
+    display: none; }
+    #ViewContainer #HowToPlayContent .slide {
+      width: 100%;
+      height: 100%;
+      position: relative; }
+    #ViewContainer #HowToPlayContent .slide h1 {
+      text-transform: uppercase;
+      color: white;
+      opacity: 1 !important;
+      width: 150px;
+      margin-left: -75px;
+      top: 20%;
+      left: 50%;
+      position: absolute; }
+    #ViewContainer #HowToPlayContent .slide p {
+      color: white;
+      width: 300px;
+      margin-left: -150px;
+      opacity: 1 !important;
+      margin-top: 20px;
+      left: 50%;
+      top: 40%;
+      position: absolute; }
+    #ViewContainer #HowToPlayContent #dotContainer {
+      left: 50%;
+      margin-top: 50px;
+      margin-left: -22.5px;
+      position: absolute; }
+      #ViewContainer #HowToPlayContent #dotContainer .dot {
+        background-image: url(../images/circle-stroke.png);
+        background-repeat: no-repeat;
+        background-size: 60%;
+        display: inline-block;
+        width: 15px;
+        height: 16px;
+        cursor: pointer; }
+      #ViewContainer #HowToPlayContent #dotContainer .active {
+        background-image: url(../images/circle-fill.png); }
+    #ViewContainer #HowToPlayContent #arrowBig {
+      background-image: url(../images/arrow-big.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 70px;
+      height: 50px;
+      position: absolute;
+      left: 50%;
+      margin-left: -35px;
+      bottom: 15%; }
+    #ViewContainer #HowToPlayContent #minitext {
+      font-size: 0.5em;
+      opacity: 0.7 !important; }
+    #ViewContainer #HowToPlayContent #audioIcon {
+      background-image: url(../images/audio-icon.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 70px;
+      height: 50px;
+      float: left;
+      margin-left: -35px;
+      margin-top: 15%; }
+    #ViewContainer #HowToPlayContent #arrowContainer {
+      margin-left: -446px; }
+      #ViewContainer #HowToPlayContent #arrowContainer .arrowDown {
+        background-image: url(../images/arrow-down.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 40px;
+        height: 50px;
+        float: left;
+        margin-left: 193px;
+        margin-top: 15%; }
+  #ViewContainer #GameView {
+    width: 100%;
+    height: 100%;
+    margin-left: -50%;
+    overflow: hidden; }
+    #ViewContainer #GameView #tablestuff {
+      position: absolute;
+      z-index: 103;
+      pointer-events: none; }
