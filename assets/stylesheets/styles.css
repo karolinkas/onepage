@@ -416,14 +416,28 @@ input {
       width: 2%;
       background-image: url(../images/arrow-white.png);
       background-size: 18%;
-      background-position: 14px 9px;
+      background-position: 20px 11px;
       margin-left: 85%;
       box-shadow: 0 0 1em grey;
       float: right;
-      padding: 1.4em;
+      padding: 1.8em;
       margin-top: -23px;
       float: right;
-      margin-top: -28px; }
+      margin-top: -2px; }
+    #ViewContainer #AudioView p {
+      line-height: 1.5em;
+      width: 76%;
+      margin-left: 14%; }
+    #ViewContainer #AudioView #AudioIconPurple {
+      background-image: url(../images/audio-icon-purple.png);
+      background-repeat: no-repeat;
+      background-size: 10%;
+      width: 100%;
+      height: 50px;
+      float: left;
+      margin-left: 46%;
+      margin-top: 15%;
+      margin-bottom: 2%; }
   #ViewContainer #ConnectView {
     height: 310px;
     width: 500px;

@@ -124,15 +124,15 @@ input {
 
 }
 
-
-
 .backButton {
 	background-image: url(../images/arrow.png);
 	background-size: 9%;
 	padding: 0.6em 2.0em;
 	background-position: 9.5px 9.7px; 
 	background-repeat: no-repeat;
-		}
+}
+
+
 
 .purplebox {
 	background: linear-gradient(137deg, $lightpink 0%, $darkpink 100%) 15%;
@@ -555,14 +555,32 @@ input {
             width: 2%;
             background-image: url(../images/arrow-white.png);
             background-size: 18%;
-            background-position: 14px 9px;
+            background-position: 20px 11px;
             margin-left: 85%;
             box-shadow: 0 0 1em grey;
             float: right;
-            padding: 1.4em;
+            padding: 1.8em;
             margin-top: -23px;
             float: right;
-            margin-top: -28px; 
+            margin-top: -2px; 
+        }
+
+        p{
+            line-height: 1.5em;
+            width: 76%;
+            margin-left: 14%;
+        }
+
+        #AudioIconPurple{
+            background-image: url(../images/audio-icon-purple.png);
+            background-repeat: no-repeat;
+            background-size: 10%;
+            width: 100%;
+            height: 50px;
+            float: left;
+            margin-left: 46%;
+            margin-top: 15%;
+            margin-bottom: 2%;
         }
 
     }
@@ -797,16 +815,18 @@ input {
 			font-size: 0.5em;
 			opacity: 0.7 !important;
 		}
-		#audioIcon{
-			background-image: url(../images/audio-icon.png);
-			background-repeat: no-repeat;
-			background-size: contain;
-			width: 70px;
-			height: 50px;
-			float: left;
-			margin-left: -35px;
-			margin-top: 15%;
-		}
+
+        #audioIcon{
+            background-image: url(../images/audio-icon.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 70px;
+            height: 50px;
+            float: left;
+            margin-left: -35px;
+            margin-top: 15%;
+        }
+
  		#arrowContainer{
 			margin-left:-446px;
 			.arrowDown{

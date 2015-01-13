@@ -33,7 +33,7 @@ window.onload = function() {
     slide3.hide();
     
 
-    currentView = HOME_VIEW;
+    currentView = REGISTER_VIEW;
     currentView.css({
         left: "50%"
     });
@@ -63,6 +63,10 @@ window.onload = function() {
         nextView(HOME_VIEW);
     });
 
+    $(".ContinueButton").click(function() {
+        nextView(GAME_VIEW);
+    });
+
     $(".jugarButton").click(function() {
         nextView(GAME_VIEW);
     });
@@ -78,7 +82,7 @@ window.onload = function() {
 
     $("#SubmitLogin").click(function() {
         $('#SubmitLogin').submit();
-        var valid = validate();
+        var valid = validateLogin();
         if (valid){
             loginUser();
             alert("is valid!");
@@ -149,6 +153,11 @@ function resize() {
 
     y = (h - PROFILE_VIEW.height()) * .5;
     PROFILE_VIEW.css({
+        top: y
+    });
+
+    y = (h - AUDIO_VIEW.height()) * .5;
+    AUDIO_VIEW.css({
         top: y
     });
 }

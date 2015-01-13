@@ -22,8 +22,10 @@ var requestPassword = function() {
 
 var loginUser = function() {
 
-    var emailLogin = document.RegisterForm.email.value;
-    var passwordLogin = document.RegisterForm.password.value;
+    var emailLogin = document.LoginForm.emailLogin.value;
+    var passwordLogin = document.LoginForm.passwordLogin.value;
+
+    console.log(passwordLogin+emailLogin);
 
     $.ajax({
         type: "POST",
@@ -34,7 +36,7 @@ var loginUser = function() {
         },
         success: function(data) {
 
-            console.log(data);
+            console.log("I logged in!");
         },
         error: function() {
             alert('Error occured');
